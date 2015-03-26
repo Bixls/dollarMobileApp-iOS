@@ -1,0 +1,427 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18BE79281AC4646100E27358 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BE79271AC4646100E27358 /* main.m */; };
+		18BE792B1AC4646100E27358 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BE792A1AC4646100E27358 /* AppDelegate.m */; };
+		18BE792E1AC4646100E27358 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BE792D1AC4646100E27358 /* ViewController.m */; };
+		18BE79311AC4646100E27358 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18BE792F1AC4646100E27358 /* Main.storyboard */; };
+		18BE79331AC4646100E27358 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18BE79321AC4646100E27358 /* Images.xcassets */; };
+		18BE79361AC4646200E27358 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18BE79341AC4646200E27358 /* LaunchScreen.xib */; };
+		18BE79421AC4646200E27358 /* _________________Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BE79411AC4646200E27358 /* _________________Tests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18BE793C1AC4646200E27358 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18BE791A1AC4646100E27358 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18BE79211AC4646100E27358;
+			remoteInfo = "سعر الدولار اليوم";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		18BE79221AC4646100E27358 /* سعر الدولار اليوم.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "سعر الدولار اليوم.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18BE79261AC4646100E27358 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18BE79271AC4646100E27358 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		18BE79291AC4646100E27358 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		18BE792A1AC4646100E27358 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		18BE792C1AC4646100E27358 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		18BE792D1AC4646100E27358 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		18BE79301AC4646100E27358 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		18BE79321AC4646100E27358 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		18BE79351AC4646200E27358 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		18BE793B1AC4646200E27358 /* سعر الدولار اليومTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "سعر الدولار اليومTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18BE79401AC4646200E27358 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18BE79411AC4646200E27358 /* _________________Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_________________Tests.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18BE791F1AC4646100E27358 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18BE79381AC4646200E27358 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18BE79191AC4646100E27358 = {
+			isa = PBXGroup;
+			children = (
+				18BE79241AC4646100E27358 /* سعر الدولار اليوم */,
+				18BE793E1AC4646200E27358 /* سعر الدولار اليومTests */,
+				18BE79231AC4646100E27358 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		18BE79231AC4646100E27358 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18BE79221AC4646100E27358 /* سعر الدولار اليوم.app */,
+				18BE793B1AC4646200E27358 /* سعر الدولار اليومTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18BE79241AC4646100E27358 /* سعر الدولار اليوم */ = {
+			isa = PBXGroup;
+			children = (
+				18BE79291AC4646100E27358 /* AppDelegate.h */,
+				18BE792A1AC4646100E27358 /* AppDelegate.m */,
+				18BE792C1AC4646100E27358 /* ViewController.h */,
+				18BE792D1AC4646100E27358 /* ViewController.m */,
+				18BE792F1AC4646100E27358 /* Main.storyboard */,
+				18BE79321AC4646100E27358 /* Images.xcassets */,
+				18BE79341AC4646200E27358 /* LaunchScreen.xib */,
+				18BE79251AC4646100E27358 /* Supporting Files */,
+			);
+			path = "سعر الدولار اليوم";
+			sourceTree = "<group>";
+		};
+		18BE79251AC4646100E27358 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				18BE79261AC4646100E27358 /* Info.plist */,
+				18BE79271AC4646100E27358 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		18BE793E1AC4646200E27358 /* سعر الدولار اليومTests */ = {
+			isa = PBXGroup;
+			children = (
+				18BE79411AC4646200E27358 /* _________________Tests.m */,
+				18BE793F1AC4646200E27358 /* Supporting Files */,
+			);
+			path = "سعر الدولار اليومTests";
+			sourceTree = "<group>";
+		};
+		18BE793F1AC4646200E27358 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				18BE79401AC4646200E27358 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18BE79211AC4646100E27358 /* سعر الدولار اليوم */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18BE79451AC4646200E27358 /* Build configuration list for PBXNativeTarget "سعر الدولار اليوم" */;
+			buildPhases = (
+				18BE791E1AC4646100E27358 /* Sources */,
+				18BE791F1AC4646100E27358 /* Frameworks */,
+				18BE79201AC4646100E27358 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "سعر الدولار اليوم";
+			productName = "سعر الدولار اليوم";
+			productReference = 18BE79221AC4646100E27358 /* سعر الدولار اليوم.app */;
+			productType = "com.apple.product-type.application";
+		};
+		18BE793A1AC4646200E27358 /* سعر الدولار اليومTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18BE79481AC4646200E27358 /* Build configuration list for PBXNativeTarget "سعر الدولار اليومTests" */;
+			buildPhases = (
+				18BE79371AC4646200E27358 /* Sources */,
+				18BE79381AC4646200E27358 /* Frameworks */,
+				18BE79391AC4646200E27358 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18BE793D1AC4646200E27358 /* PBXTargetDependency */,
+			);
+			name = "سعر الدولار اليومTests";
+			productName = "سعر الدولار اليومTests";
+			productReference = 18BE793B1AC4646200E27358 /* سعر الدولار اليومTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18BE791A1AC4646100E27358 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = Bixls;
+				TargetAttributes = {
+					18BE79211AC4646100E27358 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					18BE793A1AC4646200E27358 = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 18BE79211AC4646100E27358;
+					};
+				};
+			};
+			buildConfigurationList = 18BE791D1AC4646100E27358 /* Build configuration list for PBXProject "سعر الدولار اليوم" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18BE79191AC4646100E27358;
+			productRefGroup = 18BE79231AC4646100E27358 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18BE79211AC4646100E27358 /* سعر الدولار اليوم */,
+				18BE793A1AC4646200E27358 /* سعر الدولار اليومTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18BE79201AC4646100E27358 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18BE79311AC4646100E27358 /* Main.storyboard in Resources */,
+				18BE79361AC4646200E27358 /* LaunchScreen.xib in Resources */,
+				18BE79331AC4646100E27358 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18BE79391AC4646200E27358 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18BE791E1AC4646100E27358 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18BE792E1AC4646100E27358 /* ViewController.m in Sources */,
+				18BE792B1AC4646100E27358 /* AppDelegate.m in Sources */,
+				18BE79281AC4646100E27358 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18BE79371AC4646200E27358 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18BE79421AC4646200E27358 /* _________________Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18BE793D1AC4646200E27358 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18BE79211AC4646100E27358 /* سعر الدولار اليوم */;
+			targetProxy = 18BE793C1AC4646200E27358 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		18BE792F1AC4646100E27358 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18BE79301AC4646100E27358 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		18BE79341AC4646200E27358 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18BE79351AC4646200E27358 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18BE79431AC4646200E27358 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		18BE79441AC4646200E27358 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18BE79461AC4646200E27358 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "سعر الدولار اليوم/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		18BE79471AC4646200E27358 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "سعر الدولار اليوم/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		18BE79491AC4646200E27358 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "سعر الدولار اليومTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/سعر الدولار اليوم.app/سعر الدولار اليوم";
+			};
+			name = Debug;
+		};
+		18BE794A1AC4646200E27358 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "سعر الدولار اليومTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/سعر الدولار اليوم.app/سعر الدولار اليوم";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18BE791D1AC4646100E27358 /* Build configuration list for PBXProject "سعر الدولار اليوم" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18BE79431AC4646200E27358 /* Debug */,
+				18BE79441AC4646200E27358 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18BE79451AC4646200E27358 /* Build configuration list for PBXNativeTarget "سعر الدولار اليوم" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18BE79461AC4646200E27358 /* Debug */,
+				18BE79471AC4646200E27358 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		18BE79481AC4646200E27358 /* Build configuration list for PBXNativeTarget "سعر الدولار اليومTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18BE79491AC4646200E27358 /* Debug */,
+				18BE794A1AC4646200E27358 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18BE791A1AC4646100E27358 /* Project object */;
+}
