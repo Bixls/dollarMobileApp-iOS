@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		185D7EE31AC72B5C00985FDE /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185D7EE21AC72B5C00985FDE /* SWRevealViewController.m */; };
+		185D7EE51AC7322200985FDE /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 185D7EE41AC7322200985FDE /* menu.png */; };
+		185D7EE81AC7328F00985FDE /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185D7EE71AC7328F00985FDE /* MenuViewController.m */; };
 		18BE79281AC4646100E27358 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BE79271AC4646100E27358 /* main.m */; };
 		18BE792B1AC4646100E27358 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BE792A1AC4646100E27358 /* AppDelegate.m */; };
-		18BE792E1AC4646100E27358 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BE792D1AC4646100E27358 /* ViewController.m */; };
+		18BE792E1AC4646100E27358 /* HomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BE792D1AC4646100E27358 /* HomePageViewController.m */; };
 		18BE79311AC4646100E27358 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18BE792F1AC4646100E27358 /* Main.storyboard */; };
 		18BE79331AC4646100E27358 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18BE79321AC4646100E27358 /* Images.xcassets */; };
 		18BE79361AC4646200E27358 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18BE79341AC4646200E27358 /* LaunchScreen.xib */; };
@@ -27,13 +30,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		185D7EE11AC72B5C00985FDE /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		185D7EE21AC72B5C00985FDE /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		185D7EE41AC7322200985FDE /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
+		185D7EE61AC7328F00985FDE /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		185D7EE71AC7328F00985FDE /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
 		18BE79221AC4646100E27358 /* سعر الدولار اليوم.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "سعر الدولار اليوم.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18BE79261AC4646100E27358 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18BE79271AC4646100E27358 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		18BE79291AC4646100E27358 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		18BE792A1AC4646100E27358 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		18BE792C1AC4646100E27358 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		18BE792D1AC4646100E27358 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		18BE792C1AC4646100E27358 /* HomePageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomePageViewController.h; sourceTree = "<group>"; };
+		18BE792D1AC4646100E27358 /* HomePageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomePageViewController.m; sourceTree = "<group>"; };
 		18BE79301AC4646100E27358 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		18BE79321AC4646100E27358 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		18BE79351AC4646200E27358 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -60,9 +68,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		185D7EE01AC72B5C00985FDE /* SWRevealViewController */ = {
+			isa = PBXGroup;
+			children = (
+				185D7EE11AC72B5C00985FDE /* SWRevealViewController.h */,
+				185D7EE21AC72B5C00985FDE /* SWRevealViewController.m */,
+			);
+			path = SWRevealViewController;
+			sourceTree = "<group>";
+		};
 		18BE79191AC4646100E27358 = {
 			isa = PBXGroup;
 			children = (
+				185D7EE41AC7322200985FDE /* menu.png */,
 				18BE79241AC4646100E27358 /* سعر الدولار اليوم */,
 				18BE793E1AC4646200E27358 /* سعر الدولار اليومTests */,
 				18BE79231AC4646100E27358 /* Products */,
@@ -83,9 +101,11 @@
 			children = (
 				18BE79291AC4646100E27358 /* AppDelegate.h */,
 				18BE792A1AC4646100E27358 /* AppDelegate.m */,
-				18BE792C1AC4646100E27358 /* ViewController.h */,
-				18BE792D1AC4646100E27358 /* ViewController.m */,
+				18BE792C1AC4646100E27358 /* HomePageViewController.h */,
+				18BE792D1AC4646100E27358 /* HomePageViewController.m */,
 				18BE792F1AC4646100E27358 /* Main.storyboard */,
+				185D7EE61AC7328F00985FDE /* MenuViewController.h */,
+				185D7EE71AC7328F00985FDE /* MenuViewController.m */,
 				18BE79321AC4646100E27358 /* Images.xcassets */,
 				18BE79341AC4646200E27358 /* LaunchScreen.xib */,
 				18BE79251AC4646100E27358 /* Supporting Files */,
@@ -96,6 +116,7 @@
 		18BE79251AC4646100E27358 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				185D7EE01AC72B5C00985FDE /* SWRevealViewController */,
 				18BE79261AC4646100E27358 /* Info.plist */,
 				18BE79271AC4646100E27358 /* main.m */,
 			);
@@ -199,6 +220,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				185D7EE51AC7322200985FDE /* menu.png in Resources */,
 				18BE79311AC4646100E27358 /* Main.storyboard in Resources */,
 				18BE79361AC4646200E27358 /* LaunchScreen.xib in Resources */,
 				18BE79331AC4646100E27358 /* Images.xcassets in Resources */,
@@ -219,9 +241,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18BE792E1AC4646100E27358 /* ViewController.m in Sources */,
+				18BE792E1AC4646100E27358 /* HomePageViewController.m in Sources */,
 				18BE792B1AC4646100E27358 /* AppDelegate.m in Sources */,
 				18BE79281AC4646100E27358 /* main.m in Sources */,
+				185D7EE31AC72B5C00985FDE /* SWRevealViewController.m in Sources */,
+				185D7EE81AC7328F00985FDE /* MenuViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +436,7 @@
 				18BE79471AC4646200E27358 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		18BE79481AC4646200E27358 /* Build configuration list for PBXNativeTarget "سعر الدولار اليومTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +445,7 @@
 				18BE794A1AC4646200E27358 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
