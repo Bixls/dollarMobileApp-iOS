@@ -7,10 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "CountryList.h"
+#import "Country.h"
 @interface HomePageViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *barButton;
+@property (strong,nonatomic) NSDictionary *receivedDictionary;
+@property (nonatomic,strong) CountryList *countryList;
+
+- (IBAction)refreshButton:(id)sender;
 
 
 @end

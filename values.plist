@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>values</key>
+	<dict>
+		<key>USD</key>
+		<integer>0</integer>
+		<key>EGP</key>
+		<integer>0</integer>
+		<key>SAR</key>
+		<integer>0</integer>
+		<key>KWD</key>
+		<integer>0</integer>
+		<key>QAR</key>
+		<integer>0</integer>
+		<key>JOD</key>
+		<integer>0</integer>
+		<key>BHD</key>
+		<integer>0</integer>
+		<key>AED</key>
+		<integer>0</integer>
+		<key>LBP</key>
+		<integer>0</integer>
+		<key>LYD</key>
+		<integer>0</integer>
+		<key>TND</key>
+		<integer>0</integer>
+		<key>YER</key>
+		<integer>0</integer>
+		<key>SYP</key>
+		<integer>0</integer>
+		<key>DZD</key>
+		<integer>0</integer>
+	</dict>
+</dict>
+</plist>
