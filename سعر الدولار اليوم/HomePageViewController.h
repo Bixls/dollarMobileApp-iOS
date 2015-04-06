@@ -9,13 +9,18 @@
 #import <UIKit/UIKit.h>
 #import "CountryList.h"
 #import "Country.h"
-@interface HomePageViewController : UIViewController
+#import "chooseCountryViewController.h"
+@interface HomePageViewController : UIViewController <chooseCountryViewControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *barButton;
-@property (strong,nonatomic) NSDictionary *receivedDictionary;
-@property (nonatomic,strong) CountryList *countryList;
+@property (weak, nonatomic) IBOutlet UIButton *firstCountryImageBtn;
+@property (weak, nonatomic) IBOutlet UIButton *secondCountryImageBtn;
+@property (weak, nonatomic) IBOutlet UIView *firstBtnView;
+@property (weak, nonatomic) IBOutlet UIView *secondBtnView;
 
 - (IBAction)refreshButton:(id)sender;
+- (IBAction)firstCountryBtnPressed:(id)sender;
+- (IBAction)secondCountryBtnPressed:(id)sender;
 
 
 @end

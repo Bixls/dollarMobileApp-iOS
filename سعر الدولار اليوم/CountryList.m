@@ -28,7 +28,7 @@
 
         Country *Bahrain = [[Country alloc]initWithCountryCode:@"BHD" countryName:@"البحرين" currencyFullName:@"الدينار البحريني" currencyShortName:@"دينار" countryFlag:@"bhd"];
 
-        Country *Emirates = [[Country alloc]initWithCountryCode:@"AED" countryName:@"الإمارات" currencyFullName:@"االدرهم الاماراتي" currencyShortName:@"درهم" countryFlag:@"aed"];
+        Country *Emirates = [[Country alloc]initWithCountryCode:@"AED" countryName:@"الإمارات" currencyFullName:@"الدرهم الاماراتي" currencyShortName:@"درهم" countryFlag:@"aed"];
         
         Country *Lebanon = [[Country alloc]initWithCountryCode:@"LBP" countryName:@"لبنان" currencyFullName:@"الليرة اللبنانية" currencyShortName:@"ليرة" countryFlag:@"lbp"];
         
