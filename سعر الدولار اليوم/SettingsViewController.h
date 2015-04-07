@@ -12,5 +12,14 @@
 
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *barButton;
 
+@property (weak, nonatomic) IBOutlet UIButton *firstImageBtn;
+@property (weak, nonatomic) IBOutlet UIButton *firstLabelBtn;
+@property (weak, nonatomic) IBOutlet UIButton *secondImageBtn;
+@property (weak, nonatomic) IBOutlet UIButton *secondLabelBtn;
+
+- (IBAction)firstImageBtnPressed:(id)sender;
+- (IBAction)firstLabelBtnPressed:(id)sender;
+- (IBAction)secondImageBtnPressed:(id)sender;
+- (IBAction)secondLabelBtnPressed:(id)sender;
 
 @end
