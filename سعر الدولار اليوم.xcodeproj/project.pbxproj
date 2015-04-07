@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1842DC8D1AD41AEB0089FB74 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1842DC8C1AD41AEB0089FB74 /* SettingsViewController.m */; };
 		184D2B6C1AD4054E00AC9F3A /* equal.png in Resources */ = {isa = PBXBuildFile; fileRef = 184D2B6B1AD4054E00AC9F3A /* equal.png */; };
 		185D7EE31AC72B5C00985FDE /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185D7EE21AC72B5C00985FDE /* SWRevealViewController.m */; };
 		185D7EE51AC7322200985FDE /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 185D7EE41AC7322200985FDE /* menu.png */; };
@@ -58,6 +59,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1842DC8B1AD41AEB0089FB74 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		1842DC8C1AD41AEB0089FB74 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		184D2B6B1AD4054E00AC9F3A /* equal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = equal.png; sourceTree = "<group>"; };
 		185D7EE11AC72B5C00985FDE /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		185D7EE21AC72B5C00985FDE /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
@@ -202,6 +205,8 @@
 				18BE792C1AC4646100E27358 /* HomePageViewController.h */,
 				18BE792D1AC4646100E27358 /* HomePageViewController.m */,
 				18BE792F1AC4646100E27358 /* Main.storyboard */,
+				1842DC8B1AD41AEB0089FB74 /* SettingsViewController.h */,
+				1842DC8C1AD41AEB0089FB74 /* SettingsViewController.m */,
 				18876A5A1AD252CC005218B9 /* chooseCountryViewController.h */,
 				18876A5B1AD252CC005218B9 /* chooseCountryViewController.m */,
 				185D7EE61AC7328F00985FDE /* MenuViewController.h */,
@@ -372,6 +377,7 @@
 				18876A5C1AD252CC005218B9 /* chooseCountryViewController.m in Sources */,
 				185D7EE31AC72B5C00985FDE /* SWRevealViewController.m in Sources */,
 				187BAB631AD0D4E500C97EC6 /* Country.m in Sources */,
+				1842DC8D1AD41AEB0089FB74 /* SettingsViewController.m in Sources */,
 				187BAB9B1AD0DA8300C97EC6 /* CountryList.m in Sources */,
 				185D7EE81AC7328F00985FDE /* MenuViewController.m in Sources */,
 			);
