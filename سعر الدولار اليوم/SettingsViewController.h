@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "chooseCountryViewController.h"
 
-@interface SettingsViewController : UIViewController
+@interface SettingsViewController : UIViewController <chooseCountryViewControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *barButton;
 
@@ -21,5 +22,6 @@
 - (IBAction)firstLabelBtnPressed:(id)sender;
 - (IBAction)secondImageBtnPressed:(id)sender;
 - (IBAction)secondLabelBtnPressed:(id)sender;
+- (IBAction)saveBtnPressed:(id)sender;
 
 @end

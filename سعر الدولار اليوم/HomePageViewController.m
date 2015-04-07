@@ -7,7 +7,6 @@
 //
 
 #import "HomePageViewController.h"
-
 #import "SWRevealViewController.h"
 
 @interface HomePageViewController ()
@@ -25,6 +24,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     self.userDefaults = [NSUserDefaults standardUserDefaults];
     if (![self.userDefaults boolForKey:@"HasLaunchedOnce"]) {
         [self performSegueWithIdentifier:@"firstTimeSegue" sender:self];
@@ -41,7 +41,8 @@
     self.secondBtnView.backgroundColor = [UIColor colorWithRed:255 green:255 blue:255 alpha:0.5];
 
     self.countryList = [[CountryList alloc]init];
-    
+    NSLog(@"%ld",(long)[[self.userDefaults objectForKey:@"btnPressed"]integerValue]);
+
     [self updateCurrencyWithPersistedData];
     [self updateUIWithPersistedData];
 
@@ -75,7 +76,7 @@
 
 -(void)updateUIWithPersistedData {
    
-    if ([[self.userDefaults objectForKey:@"btnPressed"]integerValue]==-1) {
+    if ([[self.userDefaults valueForKey:@"btnPressed"]integerValue]==-1) {
         
         NSDictionary *userSettings = [self.userDefaults objectForKey:@"userSettings"];
         
@@ -94,6 +95,19 @@
                 [self.secondCountryImageBtn setBackgroundColor:[UIColor colorWithPatternImage:self.secondCountry.countryFlag]];
                 NSNumber *currencyValue = @(self.secondCountry.currencyValue);
                 self.secondCountryCurrency.text = [currencyValue stringValue];
+            }
+            if ([[userSettings valueForKey:@"firstCountryCode"] isEqualToString:country.countryCode]&&[[userSettings valueForKey:@"secondCountryCode"] isEqualToString:country.countryCode]) {
+                self.firstCountry = country;
+                self.secondCountry = country;
+                
+                [self.firstCountryImageBtn setBackgroundColor:[UIColor colorWithPatternImage:self.firstCountry.countryFlag]];
+                [self.secondCountryImageBtn setBackgroundColor:[UIColor colorWithPatternImage:self.secondCountry.countryFlag]];
+                
+                double temp = [self calculateTheOtherCurrencyFromValueOfFirstCountry:self.firstCountry.currencyValue valueOfSecondCountry:self.secondCountry.currencyValue];
+                NSNumber *currencyValue = @(temp);
+                self.firstCountryCurrency.text = @"1";
+                self.secondCountryCurrency.text= [currencyValue stringValue];
+                
             }
 
         }
@@ -174,17 +188,15 @@
 
 - (IBAction)firstCountryBtnPressed:(id)sender {
     
-    [self.userDefaults setValue:[NSNumber numberWithInteger:0] forKey:@"btnPressed"];
+     [self.userDefaults setObject:[NSNumber numberWithInteger:0] forKey:@"btnPressed"];
     [self.userDefaults synchronize];
-    
     [self performSegueWithIdentifier:@"chooseCountrySegue" sender:self];
 }
 
 - (IBAction)secondCountryBtnPressed:(id)sender {
     
-    [self.userDefaults setValue:[NSNumber numberWithInteger:1] forKey:@"btnPressed"];
+    [self.userDefaults setObject:[NSNumber numberWithInteger:1] forKey:@"btnPressed"];
     [self.userDefaults synchronize];
-    
     [self performSegueWithIdentifier:@"chooseCountrySegue" sender:self];
 }
 

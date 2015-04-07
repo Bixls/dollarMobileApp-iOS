@@ -54,7 +54,6 @@
 
 - (IBAction)firstCountryImageBtnPressed:(id)sender {
     self.btnPressed = 0;
-    
     [self performSegueWithIdentifier:@"chooseCountrySegue" sender:self];
 }
 

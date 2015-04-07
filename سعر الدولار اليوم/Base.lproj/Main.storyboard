@@ -435,28 +435,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VUF-Tt-anc">
-                                <rect key="frame" x="16" y="157" width="288" height="283"/>
+                                <rect key="frame" x="16" y="166" width="288" height="234"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="الإعدادات الرئيسية" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gSE-SS-Xqa">
-                                        <rect key="frame" x="152" y="0.0" width="128" height="24"/>
+                                        <rect key="frame" x="152" y="8" width="128" height="24"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="من" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cwB-dq-Xcc">
-                                        <rect key="frame" x="263" y="32" width="17" height="21"/>
+                                        <rect key="frame" x="263" y="40" width="17" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="إلي" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xj5-KU-bZs">
-                                        <rect key="frame" x="259" y="158" width="21" height="21"/>
+                                        <rect key="frame" x="259" y="116" width="21" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PaM-r9-Ulw">
-                                        <rect key="frame" x="232" y="61" width="48" height="48"/>
+                                        <rect key="frame" x="232" y="69" width="48" height="48"/>
                                         <state key="normal">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -465,7 +465,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vBH-Ou-Z1N">
-                                        <rect key="frame" x="232" y="187" width="48" height="48"/>
+                                        <rect key="frame" x="232" y="145" width="48" height="48"/>
                                         <state key="normal">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -473,8 +473,17 @@
                                             <action selector="secondImageBtnPressed:" destination="ItI-ke-HbC" eventType="touchUpInside" id="MgH-j9-Jod"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iOC-GN-eik">
+                                        <rect key="frame" x="136" y="78" width="88" height="30"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="firstLabelBtnPressed:" destination="ItI-ke-HbC" eventType="touchUpInside" id="lLy-dS-dsR"/>
+                                        </connections>
+                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G1a-RR-Jfz">
-                                        <rect key="frame" x="185" y="196" width="46" height="30"/>
+                                        <rect key="frame" x="136" y="154" width="88" height="30"/>
                                         <state key="normal" title="Button">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -482,13 +491,15 @@
                                             <action selector="secondLabelBtnPressed:" destination="ItI-ke-HbC" eventType="touchUpInside" id="lYR-R4-0nT"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iOC-GN-eik">
-                                        <rect key="frame" x="185" y="70" width="46" height="30"/>
-                                        <state key="normal" title="Button">
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xDJ-3u-qxK">
+                                        <rect key="frame" x="124" y="192" width="40" height="42"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="حفظ">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="firstLabelBtnPressed:" destination="ItI-ke-HbC" eventType="touchUpInside" id="lLy-dS-dsR"/>
+                                            <action selector="saveBtnPressed:" destination="ItI-ke-HbC" eventType="touchUpInside" id="DGV-r7-EMu"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -514,6 +525,7 @@
                         <outlet property="firstLabelBtn" destination="iOC-GN-eik" id="8I6-yr-30a"/>
                         <outlet property="secondImageBtn" destination="vBH-Ou-Z1N" id="PLj-eS-Zv0"/>
                         <outlet property="secondLabelBtn" destination="G1a-RR-Jfz" id="L2B-3O-2aT"/>
+                        <segue destination="ls6-8g-GyT" kind="modal" identifier="chooseCountrySegue" id="0At-Xc-Mve"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TcF-oC-ygc" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -644,6 +656,6 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="TgU-vc-AJC"/>
-        <segue reference="zrt-20-76X"/>
+        <segue reference="0At-Xc-Mve"/>
     </inferredMetricsTieBreakers>
 </document>
