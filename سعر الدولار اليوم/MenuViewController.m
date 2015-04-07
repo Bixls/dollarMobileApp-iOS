@@ -44,9 +44,7 @@
    
     NSString *cellIdentifier = [self.menu objectAtIndex:indexPath.row];
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
-    
-    // Configure the cell...
-    
+
     
     return cell;
 }

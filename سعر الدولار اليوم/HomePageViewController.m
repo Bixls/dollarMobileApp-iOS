@@ -26,13 +26,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.userDefaults = [NSUserDefaults standardUserDefaults];
-    [self.userDefaults setObject:[NSNumber numberWithInteger:-1] forKey:@"btnPressed"];
-    //check if this is the first launch for the app
-    if (![[NSUserDefaults standardUserDefaults]boolForKey:@"HasLaunchedOnce"]) {
+    if (![self.userDefaults boolForKey:@"HasLaunchedOnce"]) {
         [self performSegueWithIdentifier:@"firstTimeSegue" sender:self];
     }
-    
-    self.countryList = [[CountryList alloc]init];
+    [self.userDefaults setObject:[NSNumber numberWithInteger:-1] forKey:@"btnPressed"];
     
     self.barButton.target = self.revealViewController;
     self.barButton.action = @selector(revealToggle:);
@@ -42,30 +39,29 @@
     self.firstBtnView.backgroundColor = [UIColor colorWithRed:255 green:255 blue:255 alpha:0.5];
     self.secondBtnView.layer.cornerRadius = 34;
     self.secondBtnView.backgroundColor = [UIColor colorWithRed:255 green:255 blue:255 alpha:0.5];
+
+    self.countryList = [[CountryList alloc]init];
     
     [self updateCurrencyWithPersistedData];
-    [self updateButtons];
+    [self updateUIWithPersistedData];
 
 }
 
 -(void)viewDidAppear:(BOOL)animated {
-    [self updateButtons];
+    [self updateUIWithPersistedData];
 }
 
 #pragma mark - Data Manipulation methods
 
 -(void)saveReceivedDataToDisk {
-    
-    //NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     [self.userDefaults setObject:self.receivedDictionary forKey:@"storedData"];
     [self.userDefaults synchronize];
 }
 
 -(void)updateCurrencyWithPersistedData {
-    //NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    
     NSDictionary *storedData = [self.userDefaults objectForKey:@"storedData"];
     NSArray *values = storedData[@"values"];
-    
     for (Country *country in self.countryList.countries) {
         for (NSDictionary *dict in values) {
             NSString *title = [dict valueForKey:@"title"];
@@ -77,57 +73,79 @@
     }
 }
 
--(void)updateButtons {
-   // NSUserDefaults *userdefaults = [NSUserDefaults standardUserDefaults];
+-(void)updateUIWithPersistedData {
+   
     if ([[self.userDefaults objectForKey:@"btnPressed"]integerValue]==-1) {
         
         NSDictionary *userSettings = [self.userDefaults objectForKey:@"userSettings"];
-        //update buttons with user settings
         
         for (Country *country in self.countryList.countries) {
-            
             if ([[userSettings valueForKey:@"firstCountryCode"] isEqualToString:country.countryCode]) {
+                self.firstCountry = country;
+                [self.firstCountryImageBtn setBackgroundColor:[UIColor colorWithPatternImage:self.firstCountry.countryFlag]];
+                double temp = [self calculateTheOtherCurrencyFromValueOfFirstCountry:self.firstCountry.currencyValue valueOfSecondCountry:self.secondCountry.currencyValue];
+                NSNumber *currencyValue = @(temp);
+                self.firstCountryCurrency.text = @"1";
+                self.secondCountryCurrency.text= [currencyValue stringValue];
                 
-                [self.firstCountryImageBtn setBackgroundColor:[UIColor colorWithPatternImage:country.countryFlag]];
             }
             if ([[userSettings valueForKey:@"secondCountryCode"] isEqualToString:country.countryCode]) {
-                
-                [self.secondCountryImageBtn setBackgroundColor:[UIColor colorWithPatternImage:country.countryFlag]];
+                self.secondCountry = country;
+                [self.secondCountryImageBtn setBackgroundColor:[UIColor colorWithPatternImage:self.secondCountry.countryFlag]];
+                NSNumber *currencyValue = @(self.secondCountry.currencyValue);
+                self.secondCountryCurrency.text = [currencyValue stringValue];
             }
+
         }
-
+        
     }
-    
 }
 
 
--(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    if ([segue.identifier isEqualToString:@"chooseCountrySegue"]) {
-        chooseCountryViewController *chooseCountryView = segue.destinationViewController;
-        chooseCountryView.delegate = self;
-    }
-    
-}
 
 #pragma mark - Choose Country Delegate Method
 
 -(void)selectedCountry:(Country *)country {
+    [self updateUI:country];
+}
+
+-(void)updateUI:(Country *)country {
+  
+    for (Country *tempCountry in self.countryList.countries) {
+        if (tempCountry.countryCode == country.countryCode) {
+            country=tempCountry;
+        }
+    
+      
     if ([[self.userDefaults objectForKey:@"btnPressed"]integerValue]== 0 ) {
         self.firstCountry = country;
         [self.firstCountryImageBtn setBackgroundColor:[UIColor colorWithPatternImage:country.countryFlag]];
-        //[self.firstCountryLabelBtn setTitle:country.currencyFullName forState:UIControlStateNormal];
-        //[self.firstCountryLabelBtn setTintColor:[UIColor blackColor]];
+        double temp = [self calculateTheOtherCurrencyFromValueOfFirstCountry:self.firstCountry.currencyValue valueOfSecondCountry:self.secondCountry.currencyValue];
+        NSNumber *currencyValue = @(temp);
+        self.firstCountryCurrency.text = @"1";
+        self.secondCountryCurrency.text= [currencyValue stringValue];
+        
         
     }else if ([[self.userDefaults objectForKey:@"btnPressed"]integerValue]== 1) {
-        
         self.secondCountry = country;
         [self.secondCountryImageBtn setBackgroundColor:[UIColor colorWithPatternImage:country.countryFlag]];
-        // [self.secondCountryLabelBtn setTitle:country.currencyFullName forState:UIControlStateNormal];
-        // [self.secondCountryLabelBtn setTintColor:[UIColor blackColor]];
+        
+        double temp = [self calculateTheOtherCurrencyFromValueOfFirstCountry:self.firstCountry.currencyValue valueOfSecondCountry:self.secondCountry.currencyValue];
+        NSNumber *currencyValue = @(temp);
+        self.secondCountryCurrency.text= [currencyValue stringValue];
+
+    }
+
+    
     }
 }
 
-
+-(double)calculateTheOtherCurrencyFromValueOfFirstCountry:(double)firstValue valueOfSecondCountry:(double)secondValue{
+    
+    double tempValue = 1/firstValue;
+    return tempValue*secondValue;
+    
+}
 #pragma mark - Buttons 
 
 - (IBAction)refreshButton:(id)sender {
@@ -141,10 +159,19 @@
         self.receivedDictionary = [NSJSONSerialization JSONObjectWithData:receivedData options:kNilOptions error:nil];
         [self saveReceivedDataToDisk];
         [self updateCurrencyWithPersistedData];
+        dispatch_async(dispatch_get_main_queue(), ^{
+        });
+
     }];
     [task resume];
-
+    NSDate *date = [NSDate date];
+    NSDateFormatter *dateformat = [[NSDateFormatter alloc]init];
+    [dateformat setDateFormat:@"dd/MM/yyyy hh:mm a"];
+    self.dateLabel.text = [dateformat stringFromDate:date];
+    NSNumber *Temp = @(self.secondCountry.currencyValue);
+    self.secondCountryCurrency.text = [Temp stringValue];
 }
+
 - (IBAction)firstCountryBtnPressed:(id)sender {
     
     [self.userDefaults setValue:[NSNumber numberWithInteger:0] forKey:@"btnPressed"];
@@ -161,7 +188,13 @@
     [self performSegueWithIdentifier:@"chooseCountrySegue" sender:self];
 }
 
-
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"chooseCountrySegue"]) {
+        chooseCountryViewController *chooseCountryView = segue.destinationViewController;
+        chooseCountryView.delegate = self;
+    }
+    
+}
 
 
 

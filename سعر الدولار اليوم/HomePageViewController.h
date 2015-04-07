@@ -17,6 +17,11 @@
 @property (weak, nonatomic) IBOutlet UIButton *secondCountryImageBtn;
 @property (weak, nonatomic) IBOutlet UIView *firstBtnView;
 @property (weak, nonatomic) IBOutlet UIView *secondBtnView;
+@property (weak, nonatomic) IBOutlet UILabel *dateLabel;
+@property (weak, nonatomic) IBOutlet UILabel *firstCountryCurrency;
+@property (weak, nonatomic) IBOutlet UILabel *secondCountryCurrency;
+
+
 
 - (IBAction)refreshButton:(id)sender;
 - (IBAction)firstCountryBtnPressed:(id)sender;

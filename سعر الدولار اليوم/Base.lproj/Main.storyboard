@@ -72,15 +72,6 @@
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RPS-QF-kF5">
                                 <rect key="frame" x="50" y="250" width="68" height="68"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lHo-jS-mvH">
-                                        <rect key="frame" x="10" y="10" width="48" height="48"/>
-                                        <state key="normal">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="firstCountryBtnPressed:" destination="1cN-dy-dse" eventType="touchUpInside" id="UlP-sw-ToI"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rIC-Rt-R4w">
                                         <rect key="frame" x="10" y="10" width="48" height="48"/>
                                         <state key="normal">
@@ -93,16 +84,62 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I2e-0X-kdU">
-                                <rect key="frame" x="16" y="364" width="288" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="تحديث">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="آخر تحديث" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="puU-d7-Amc">
+                                <rect key="frame" x="127" y="379" width="66" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2oL-Dp-Ejl">
+                                <rect key="frame" x="16" y="408" width="288" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ydQ-ye-c9u">
+                                <rect key="frame" x="39" y="306" width="90" height="65"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qi3-vW-whb">
+                                <rect key="frame" x="135" y="259" width="50" height="50"/>
+                                <state key="normal" image="equal.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="refreshButton:" destination="1cN-dy-dse" eventType="touchUpInside" id="M3X-Zo-8ds"/>
-                                </connections>
                             </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="noN-ow-Cje">
+                                <rect key="frame" x="115" y="437" width="91" height="38"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sync.png" translatesAutoresizingMaskIntoConstraints="NO" id="og9-kA-Api">
+                                        <rect key="frame" x="6" y="5" width="28" height="25"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I2e-0X-kdU">
+                                        <rect key="frame" x="-6" y="-9" width="129" height="52"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="تحديث">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="refreshButton:" destination="1cN-dy-dse" eventType="touchUpInside" id="M3X-Zo-8ds"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="0.5" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ulH-Qi-I2d">
+                                <rect key="frame" x="191" y="306" width="90" height="65"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -113,9 +150,12 @@
                     </navigationItem>
                     <connections>
                         <outlet property="barButton" destination="9gP-Mw-jLX" id="ZRi-cH-KZH"/>
+                        <outlet property="dateLabel" destination="2oL-Dp-Ejl" id="OtA-WI-FXD"/>
                         <outlet property="firstBtnView" destination="mCz-C4-B23" id="e5q-LN-bhV"/>
+                        <outlet property="firstCountryCurrency" destination="ulH-Qi-I2d" id="gCQ-su-Y0I"/>
                         <outlet property="firstCountryImageBtn" destination="S7J-Mf-RlA" id="hlV-QO-MXd"/>
                         <outlet property="secondBtnView" destination="RPS-QF-kF5" id="BNi-uf-pZo"/>
+                        <outlet property="secondCountryCurrency" destination="ydQ-ye-c9u" id="7as-Q2-yN3"/>
                         <outlet property="secondCountryImageBtn" destination="rIC-Rt-R4w" id="mh5-gh-ebQ"/>
                         <segue destination="fIP-eq-B6J" kind="modal" identifier="firstTimeSegue" id="Jvl-P3-V50"/>
                         <segue destination="ls6-8g-GyT" kind="modal" identifier="chooseCountrySegue" id="RaN-Qy-gAX"/>
@@ -540,7 +580,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="equal.png" width="50" height="50"/>
         <image name="menu.png" width="28" height="20"/>
+        <image name="sync.png" width="25" height="25"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

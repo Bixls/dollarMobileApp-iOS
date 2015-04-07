@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		184D2B6C1AD4054E00AC9F3A /* equal.png in Resources */ = {isa = PBXBuildFile; fileRef = 184D2B6B1AD4054E00AC9F3A /* equal.png */; };
 		185D7EE31AC72B5C00985FDE /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185D7EE21AC72B5C00985FDE /* SWRevealViewController.m */; };
 		185D7EE51AC7322200985FDE /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 185D7EE41AC7322200985FDE /* menu.png */; };
 		185D7EE81AC7328F00985FDE /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185D7EE71AC7328F00985FDE /* MenuViewController.m */; };
@@ -57,6 +58,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		184D2B6B1AD4054E00AC9F3A /* equal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = equal.png; sourceTree = "<group>"; };
 		185D7EE11AC72B5C00985FDE /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		185D7EE21AC72B5C00985FDE /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		185D7EE41AC7322200985FDE /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
@@ -154,7 +156,6 @@
 				187BABA91AD0E1E100C97EC6 /* sar.png */,
 				187BABAA1AD0E1E100C97EC6 /* sdg.png */,
 				187BABAB1AD0E1E100C97EC6 /* sos.png */,
-				187BABAC1AD0E1E100C97EC6 /* sync.png */,
 				187BABAD1AD0E1E100C97EC6 /* syp.png */,
 				187BABAE1AD0E1E100C97EC6 /* tnd.png */,
 				187BABAF1AD0E1E100C97EC6 /* usd.png */,
@@ -169,6 +170,8 @@
 				187BABC61AD0E1E900C97EC6 /* Flags */,
 				185D7EE41AC7322200985FDE /* menu.png */,
 				187F1CD61AD246BB00F9863D /* back.jpg */,
+				187BABAC1AD0E1E100C97EC6 /* sync.png */,
+				184D2B6B1AD4054E00AC9F3A /* equal.png */,
 				18BE79241AC4646100E27358 /* سعر الدولار اليوم */,
 				18BE793E1AC4646200E27358 /* سعر الدولار اليومTests */,
 				18BE79231AC4646100E27358 /* Products */,
@@ -333,6 +336,7 @@
 				187BABBB1AD0E1E100C97EC6 /* mad.png in Resources */,
 				187BABCA1AD0F51000C97EC6 /* values.plist in Resources */,
 				187BABB51AD0E1E100C97EC6 /* egp.png in Resources */,
+				184D2B6C1AD4054E00AC9F3A /* equal.png in Resources */,
 				187BABC11AD0E1E100C97EC6 /* sync.png in Resources */,
 				187BABBC1AD0E1E100C97EC6 /* omr.png in Resources */,
 				18BE79311AC4646100E27358 /* Main.storyboard in Resources */,

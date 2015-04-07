@@ -20,9 +20,6 @@
     
 }
 
--(void)setButtonTitle:(NSString *)title buttonImage:(UIImage *)image  {
-    
-}
 
 #pragma mark - Table view data source
 
