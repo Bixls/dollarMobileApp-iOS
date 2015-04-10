@@ -26,17 +26,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.countryList= [[CountryList alloc]init];
-    self.userDefaults = [NSUserDefaults standardUserDefaults];
-    [self.userDefaults setObject:[NSNumber numberWithInteger:-1] forKey:@"btnPressed"];
     self.barButton.target = self.revealViewController;
     self.barButton.action = @selector(revealToggle:);
     [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
+    
+    self.userDefaults = [NSUserDefaults standardUserDefaults];
+    [self.userDefaults setObject:[NSNumber numberWithInteger:-1] forKey:@"btnPressed"];
+    
     [self.firstLabelBtn setTintColor:[UIColor blackColor]];
     [self.secondLabelBtn setTintColor:[UIColor blackColor]];
-    
-    NSLog(@"%ld",(long)[[self.userDefaults objectForKey:@"btnPressed"]integerValue]);
-
     [self.view setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"back.jpg"]]];
+    
     [self updateUIWithPersistedData];
 }
 

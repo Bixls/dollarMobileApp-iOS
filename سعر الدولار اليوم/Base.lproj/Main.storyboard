@@ -543,6 +543,84 @@
                     <view key="view" contentMode="scaleToFill" id="9oz-4q-zAH">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HXD-Ou-Qj1">
+                                <rect key="frame" x="16" y="237" width="288" height="106"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7IF-Jl-ndf">
+                                        <rect key="frame" x="232" y="0.0" width="48" height="48"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="secondImageBtnPressed:" destination="BZI-rw-fDn" eventType="touchUpInside" id="QSE-97-m2N"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="psA-6c-hiU">
+                                        <rect key="frame" x="136" y="9" width="88" height="30"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="secondLabelBtnPressed:" destination="BZI-rw-fDn" eventType="touchUpInside" id="M3k-CG-sFB"/>
+                                        </connections>
+                                    </button>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rOZ-3p-mqt">
+                                        <rect key="frame" x="8" y="56" width="272" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="0.5" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NRO-pE-Geq">
+                                <rect key="frame" x="16" y="72" width="288" height="106"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DTW-ei-MP1">
+                                        <rect key="frame" x="232" y="0.0" width="48" height="48"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="firstImageBtnPressed:" destination="BZI-rw-fDn" eventType="touchUpInside" id="O0p-u2-72X"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y7p-cZ-iEl">
+                                        <rect key="frame" x="136" y="9" width="88" height="30"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="firstLabelBtnPressed:" destination="BZI-rw-fDn" eventType="touchUpInside" id="dzf-gf-DkS"/>
+                                        </connections>
+                                    </button>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7py-JI-aAo">
+                                        <rect key="frame" x="8" y="56" width="272" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="0.5" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZTT-Tv-ovr">
+                                <rect key="frame" x="139" y="186" width="43" height="43"/>
+                                <state key="normal" image="equal4.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="kqk-Oe-UMI">
@@ -552,6 +630,12 @@
                     </navigationItem>
                     <connections>
                         <outlet property="barButton" destination="unh-MJ-riG" id="glh-wK-tsD"/>
+                        <outlet property="firstImageBtn" destination="DTW-ei-MP1" id="K2G-bU-uW9"/>
+                        <outlet property="firstLabelBtn" destination="y7p-cZ-iEl" id="vY6-OJ-YCx"/>
+                        <outlet property="firstTextField" destination="7py-JI-aAo" id="aZW-h6-8Vv"/>
+                        <outlet property="secondImageBtn" destination="7IF-Jl-ndf" id="fpn-fs-kjj"/>
+                        <outlet property="secondLabelBtn" destination="psA-6c-hiU" id="f1S-iS-sWy"/>
+                        <outlet property="secondTextField" destination="rOZ-3p-mqt" id="GbS-M5-aeu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g4P-eo-8GA" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -649,6 +733,7 @@
     </scenes>
     <resources>
         <image name="equal.png" width="50" height="50"/>
+        <image name="equal4.png" width="50" height="50"/>
         <image name="menu.png" width="28" height="20"/>
         <image name="sync.png" width="25" height="25"/>
     </resources>

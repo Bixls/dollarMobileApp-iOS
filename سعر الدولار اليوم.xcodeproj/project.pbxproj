@@ -40,6 +40,7 @@
 		187F1CD71AD246BB00F9863D /* back.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 187F1CD61AD246BB00F9863D /* back.jpg */; };
 		18876A5C1AD252CC005218B9 /* chooseCountryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18876A5B1AD252CC005218B9 /* chooseCountryViewController.m */; };
 		18A6482F1AD7E97100860908 /* ConversionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A6482E1AD7E97100860908 /* ConversionViewController.m */; };
+		18A648311AD7EC3200860908 /* equal4.png in Resources */ = {isa = PBXBuildFile; fileRef = 18A648301AD7EC3200860908 /* equal4.png */; };
 		18BE79281AC4646100E27358 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BE79271AC4646100E27358 /* main.m */; };
 		18BE792B1AC4646100E27358 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BE792A1AC4646100E27358 /* AppDelegate.m */; };
 		18BE792E1AC4646100E27358 /* HomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BE792D1AC4646100E27358 /* HomePageViewController.m */; };
@@ -101,6 +102,7 @@
 		18876A5B1AD252CC005218B9 /* chooseCountryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = chooseCountryViewController.m; sourceTree = "<group>"; };
 		18A6482D1AD7E97100860908 /* ConversionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConversionViewController.h; sourceTree = "<group>"; };
 		18A6482E1AD7E97100860908 /* ConversionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConversionViewController.m; sourceTree = "<group>"; };
+		18A648301AD7EC3200860908 /* equal4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = equal4.png; sourceTree = "<group>"; };
 		18BE79221AC4646100E27358 /* سعر الدولار اليوم.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "سعر الدولار اليوم.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18BE79261AC4646100E27358 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18BE79271AC4646100E27358 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 		187BABC61AD0E1E900C97EC6 /* Flags */ = {
 			isa = PBXGroup;
 			children = (
+				18A648301AD7EC3200860908 /* equal4.png */,
 				187BAB9C1AD0E1E100C97EC6 /* aed.png */,
 				187BAB9D1AD0E1E100C97EC6 /* bhd.png */,
 				187BAB9E1AD0E1E100C97EC6 /* djf.png */,
@@ -358,6 +361,7 @@
 				18BE79331AC4646100E27358 /* Images.xcassets in Resources */,
 				187BABB91AD0E1E100C97EC6 /* lbp.png in Resources */,
 				187BABC01AD0E1E100C97EC6 /* sos.png in Resources */,
+				18A648311AD7EC3200860908 /* equal4.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
