@@ -39,6 +39,7 @@
 		187F1CD51AD2403C00F9863D /* firstTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 187F1CD41AD2403C00F9863D /* firstTimeViewController.m */; };
 		187F1CD71AD246BB00F9863D /* back.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 187F1CD61AD246BB00F9863D /* back.jpg */; };
 		18876A5C1AD252CC005218B9 /* chooseCountryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18876A5B1AD252CC005218B9 /* chooseCountryViewController.m */; };
+		18A6482F1AD7E97100860908 /* ConversionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A6482E1AD7E97100860908 /* ConversionViewController.m */; };
 		18BE79281AC4646100E27358 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BE79271AC4646100E27358 /* main.m */; };
 		18BE792B1AC4646100E27358 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BE792A1AC4646100E27358 /* AppDelegate.m */; };
 		18BE792E1AC4646100E27358 /* HomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BE792D1AC4646100E27358 /* HomePageViewController.m */; };
@@ -98,6 +99,8 @@
 		187F1CD61AD246BB00F9863D /* back.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = back.jpg; sourceTree = "<group>"; };
 		18876A5A1AD252CC005218B9 /* chooseCountryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = chooseCountryViewController.h; sourceTree = "<group>"; };
 		18876A5B1AD252CC005218B9 /* chooseCountryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = chooseCountryViewController.m; sourceTree = "<group>"; };
+		18A6482D1AD7E97100860908 /* ConversionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConversionViewController.h; sourceTree = "<group>"; };
+		18A6482E1AD7E97100860908 /* ConversionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConversionViewController.m; sourceTree = "<group>"; };
 		18BE79221AC4646100E27358 /* سعر الدولار اليوم.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "سعر الدولار اليوم.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18BE79261AC4646100E27358 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18BE79271AC4646100E27358 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -204,9 +207,11 @@
 				187F1CD41AD2403C00F9863D /* firstTimeViewController.m */,
 				18BE792C1AC4646100E27358 /* HomePageViewController.h */,
 				18BE792D1AC4646100E27358 /* HomePageViewController.m */,
-				18BE792F1AC4646100E27358 /* Main.storyboard */,
 				1842DC8B1AD41AEB0089FB74 /* SettingsViewController.h */,
 				1842DC8C1AD41AEB0089FB74 /* SettingsViewController.m */,
+				18BE792F1AC4646100E27358 /* Main.storyboard */,
+				18A6482D1AD7E97100860908 /* ConversionViewController.h */,
+				18A6482E1AD7E97100860908 /* ConversionViewController.m */,
 				18876A5A1AD252CC005218B9 /* chooseCountryViewController.h */,
 				18876A5B1AD252CC005218B9 /* chooseCountryViewController.m */,
 				185D7EE61AC7328F00985FDE /* MenuViewController.h */,
@@ -377,6 +382,7 @@
 				18876A5C1AD252CC005218B9 /* chooseCountryViewController.m in Sources */,
 				185D7EE31AC72B5C00985FDE /* SWRevealViewController.m in Sources */,
 				187BAB631AD0D4E500C97EC6 /* Country.m in Sources */,
+				18A6482F1AD7E97100860908 /* ConversionViewController.m in Sources */,
 				1842DC8D1AD41AEB0089FB74 /* SettingsViewController.m in Sources */,
 				187BAB9B1AD0DA8300C97EC6 /* CountryList.m in Sources */,
 				185D7EE81AC7328F00985FDE /* MenuViewController.m in Sources */,
