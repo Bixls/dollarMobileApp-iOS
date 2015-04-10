@@ -318,7 +318,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kTO-Tp-yB7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2316" y="113"/>
+            <point key="canvasLocation" x="2571" y="503"/>
         </scene>
         <!--Menu View Controller-->
         <scene sceneID="qT1-aw-Xbu">
@@ -544,6 +544,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LoQ-dX-s7t">
+                                <rect key="frame" x="10" y="64" width="310" height="504"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="dismissKeyboardWithBB:" destination="BZI-rw-fDn" eventType="touchUpInside" id="tsT-RP-C6K"/>
+                                </connections>
+                            </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HXD-Ou-Qj1">
                                 <rect key="frame" x="16" y="237" width="288" height="106"/>
                                 <subviews>
@@ -569,6 +578,9 @@
                                         <rect key="frame" x="8" y="56" width="272" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="BZI-rw-fDn" id="892-1F-EDg"/>
+                                        </connections>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="0.5" colorSpace="calibratedWhite"/>
@@ -604,6 +616,9 @@
                                         <rect key="frame" x="8" y="56" width="272" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="BZI-rw-fDn" id="ZpB-gz-I56"/>
+                                        </connections>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="0.5" colorSpace="calibratedWhite"/>
@@ -636,6 +651,7 @@
                         <outlet property="secondImageBtn" destination="7IF-Jl-ndf" id="fpn-fs-kjj"/>
                         <outlet property="secondLabelBtn" destination="psA-6c-hiU" id="f1S-iS-sWy"/>
                         <outlet property="secondTextField" destination="rOZ-3p-mqt" id="GbS-M5-aeu"/>
+                        <segue destination="ls6-8g-GyT" kind="modal" identifier="chooseCountrySegue" id="7He-Af-RbP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g4P-eo-8GA" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -744,6 +760,6 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="TgU-vc-AJC"/>
-        <segue reference="0At-Xc-Mve"/>
+        <segue reference="7He-Af-RbP"/>
     </inferredMetricsTieBreakers>
 </document>

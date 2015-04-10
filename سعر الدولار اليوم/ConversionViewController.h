@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "chooseCountryViewController.h"
 
-@interface ConversionViewController : UIViewController
+@interface ConversionViewController : UIViewController <UITextFieldDelegate,chooseCountryViewControllerDelegate>
+
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *barButton;
 
 @property (weak, nonatomic) IBOutlet UIButton *firstImageBtn;
@@ -25,6 +27,7 @@
 
 - (IBAction)secondImageBtnPressed:(id)sender;
 - (IBAction)secondLabelBtnPressed:(id)sender;
+- (IBAction)dismissKeyboardWithBB:(id)sender;
 
 
 
