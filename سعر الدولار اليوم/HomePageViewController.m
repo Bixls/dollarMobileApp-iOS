@@ -171,19 +171,25 @@
         NSData *receivedData = [NSData dataWithContentsOfURL:location];
         
         self.receivedDictionary = [NSJSONSerialization JSONObjectWithData:receivedData options:kNilOptions error:nil];
-        [self saveReceivedDataToDisk];
-        [self updateCurrencyWithPersistedData];
+        
+        
         dispatch_async(dispatch_get_main_queue(), ^{
+            [self saveReceivedDataToDisk];
+            [self updateCurrencyWithPersistedData];
+            [self updateUIWithPersistedData];
+
         });
 
     }];
     [task resume];
+    
     NSDate *date = [NSDate date];
     NSDateFormatter *dateformat = [[NSDateFormatter alloc]init];
     [dateformat setDateFormat:@"dd/MM/yyyy hh:mm a"];
     self.dateLabel.text = [dateformat stringFromDate:date];
-    NSNumber *Temp = @(self.secondCountry.currencyValue);
-    self.secondCountryCurrency.text = [Temp stringValue];
+
+
+
 }
 
 - (IBAction)firstCountryBtnPressed:(id)sender {
