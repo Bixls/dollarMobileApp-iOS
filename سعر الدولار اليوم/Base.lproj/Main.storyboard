@@ -658,40 +658,6 @@
             </objects>
             <point key="canvasLocation" x="1644" y="767"/>
         </scene>
-        <!--Home Page View Controller-->
-        <scene sceneID="KUW-hz-OiF">
-            <objects>
-                <viewController id="kvG-3L-hMS" customClass="HomePageViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="bGa-R5-2Ws"/>
-                        <viewControllerLayoutGuide type="bottom" id="bHL-ij-zc8"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="vTg-9G-eXh">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Page4" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j8G-r7-4Av">
-                                <rect key="frame" x="139" y="190" width="49" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="YMf-bg-6Yr">
-                        <barButtonItem key="leftBarButtonItem" image="menu.png" id="a3O-tV-Vln">
-                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                        </barButtonItem>
-                    </navigationItem>
-                    <connections>
-                        <outlet property="barButton" destination="a3O-tV-Vln" id="lgc-58-eBD"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="oq1-w7-MPH" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1644" y="1445"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="4Ee-B6-8X7">
             <objects>
@@ -702,9 +668,6 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="kvG-3L-hMS" kind="relationship" relationship="rootViewController" id="Gpj-0K-F3Q"/>
-                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ahd-Ms-cTd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
