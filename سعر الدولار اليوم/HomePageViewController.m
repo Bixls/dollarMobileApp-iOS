@@ -29,6 +29,7 @@
     if (![self.userDefaults boolForKey:@"HasLaunchedOnce"]) {
         [self performSegueWithIdentifier:@"firstTimeSegue" sender:self];
     }
+    
     [self.userDefaults setObject:[NSNumber numberWithInteger:-1] forKey:@"btnPressed"];
     
     self.barButton.target = self.revealViewController;
