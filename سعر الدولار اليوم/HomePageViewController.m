@@ -39,13 +39,11 @@
     self.firstBtnView.backgroundColor = [UIColor colorWithRed:255 green:255 blue:255 alpha:0.5];
     self.secondBtnView.layer.cornerRadius = 34;
     self.secondBtnView.backgroundColor = [UIColor colorWithRed:255 green:255 blue:255 alpha:0.5];
-
+    
     self.countryList = [[CountryList alloc]init];
-    NSLog(@"%ld",(long)[[self.userDefaults objectForKey:@"btnPressed"]integerValue]);
-
     [self updateCurrencyWithPersistedData];
     [self updateUIWithPersistedData];
-
+  
 }
 
 -(void)viewDidAppear:(BOOL)animated {
@@ -88,6 +86,8 @@
                 NSNumber *currencyValue = @(temp);
                 self.firstCountryCurrency.text = @"1";
                 self.secondCountryCurrency.text= [currencyValue stringValue];
+                self.firstLabel.text = self.firstCountry.currencyShortName;
+              
                 
             }
             if ([[userSettings valueForKey:@"secondCountryCode"] isEqualToString:country.countryCode]) {
@@ -95,6 +95,7 @@
                 [self.secondCountryImageBtn setBackgroundColor:[UIColor colorWithPatternImage:self.secondCountry.countryFlag]];
                 NSNumber *currencyValue = @(self.secondCountry.currencyValue);
                 self.secondCountryCurrency.text = [currencyValue stringValue];
+                self.secondLabel.text = self.secondCountry.currencyShortName;
             }
             if ([[userSettings valueForKey:@"firstCountryCode"] isEqualToString:country.countryCode]&&[[userSettings valueForKey:@"secondCountryCode"] isEqualToString:country.countryCode]) {
                 self.firstCountry = country;
@@ -107,7 +108,8 @@
                 NSNumber *currencyValue = @(temp);
                 self.firstCountryCurrency.text = @"1";
                 self.secondCountryCurrency.text= [currencyValue stringValue];
-                
+                self.firstLabel.text = self.firstCountry.currencyShortName;
+                self.secondLabel.text = self.secondCountry.currencyShortName;
             }
 
         }
@@ -138,7 +140,8 @@
         NSNumber *currencyValue = @(temp);
         self.firstCountryCurrency.text = @"1";
         self.secondCountryCurrency.text= [currencyValue stringValue];
-        
+        self.firstLabel.text = self.firstCountry.currencyShortName;
+      
         
     }else if ([[self.userDefaults objectForKey:@"btnPressed"]integerValue]== 1) {
         self.secondCountry = country;
@@ -147,6 +150,7 @@
         double temp = [self calculateTheOtherCurrencyFromValueOfFirstCountry:self.firstCountry.currencyValue valueOfSecondCountry:self.secondCountry.currencyValue];
         NSNumber *currencyValue = @(temp);
         self.secondCountryCurrency.text= [currencyValue stringValue];
+        self.secondLabel.text = self.secondCountry.currencyShortName;
 
     }
 
@@ -169,25 +173,28 @@
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     NSURLSessionDownloadTask *task = [session downloadTaskWithRequest:request completionHandler:^(NSURL *location, NSURLResponse *response, NSError *error) {
         NSData *receivedData = [NSData dataWithContentsOfURL:location];
-        
-        self.receivedDictionary = [NSJSONSerialization JSONObjectWithData:receivedData options:kNilOptions error:nil];
-        
-        
-        dispatch_async(dispatch_get_main_queue(), ^{
-            [self saveReceivedDataToDisk];
-            [self updateCurrencyWithPersistedData];
-            [self updateUIWithPersistedData];
+        if (error) {
+            UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"عذراً" message:@"من فضلك تأكد من وجود انترنت للتحديث" delegate:nil cancelButtonTitle:@"تم" otherButtonTitles:nil, nil];
+            [alert show];
+        }else{
+             self.receivedDictionary = [NSJSONSerialization JSONObjectWithData:receivedData options:kNilOptions error:nil];
+            
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [self saveReceivedDataToDisk];
+                [self updateCurrencyWithPersistedData];
+                [self updateUIWithPersistedData];
+                NSDate *date = [NSDate date];
+                NSDateFormatter *dateformat = [[NSDateFormatter alloc]init];
+                [dateformat setDateFormat:@"dd/MM/yyyy hh:mm a"];
+                self.dateLabel.text = [dateformat stringFromDate:date];
 
-        });
+            });
 
+        }
     }];
     [task resume];
     
-    NSDate *date = [NSDate date];
-    NSDateFormatter *dateformat = [[NSDateFormatter alloc]init];
-    [dateformat setDateFormat:@"dd/MM/yyyy hh:mm a"];
-    self.dateLabel.text = [dateformat stringFromDate:date];
-
+    
 
 
 }

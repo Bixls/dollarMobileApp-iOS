@@ -20,6 +20,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *dateLabel;
 @property (weak, nonatomic) IBOutlet UILabel *firstCountryCurrency;
 @property (weak, nonatomic) IBOutlet UILabel *secondCountryCurrency;
+@property (weak, nonatomic) IBOutlet UILabel *firstLabel;
+@property (weak, nonatomic) IBOutlet UILabel *secondLabel;
 
 
 
