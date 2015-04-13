@@ -21,6 +21,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+//    UIBarButtonItem *backbutton =  [[UIBarButtonItem alloc] initWithTitle:@"رجوع" style:UIBarButtonItemStylePlain target:nil action:nil];
+//    
+//    [backbutton setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
+//                                        [UIFont systemFontOfSize:16],NSFontAttributeName,
+//                                        nil] forState:UIControlStateNormal];
+//    self.navigationItem.leftBarButtonItem = backbutton;
+  //  self.navigationItem.hidesBackButton = YES;
+//    self.navigationItem.backBarButtonItem = backbutton;
+  //  self.navigationController.navigationBar.topItem.title = @"رجوع";
+    self.navigationController.navigationBar.tintColor = [UIColor blackColor];
     [self.view setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"back.jpg"]]];
     self.userDefaults = [NSUserDefaults standardUserDefaults];
     self.countryList = [[CountryList alloc]init];
@@ -29,7 +39,7 @@
     for (Country *country in self.countryList.countries) {
         if (country.countryCode!=self.selectedCountry.countryCode) {
             [self.countries addObject:country];
-            NSLog(@"%f",country.currencyValue);
+           
         }else if (country.countryCode == self.selectedCountry.countryCode){
             self.selectedCountry = country;
         }
@@ -79,6 +89,9 @@
     return cell ;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
 
 
 @end

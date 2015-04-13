@@ -48,7 +48,6 @@
 		18BE792E1AC4646100E27358 /* HomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BE792D1AC4646100E27358 /* HomePageViewController.m */; };
 		18BE79311AC4646100E27358 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18BE792F1AC4646100E27358 /* Main.storyboard */; };
 		18BE79331AC4646100E27358 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18BE79321AC4646100E27358 /* Images.xcassets */; };
-		18BE79361AC4646200E27358 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18BE79341AC4646200E27358 /* LaunchScreen.xib */; };
 		18BE79421AC4646200E27358 /* _________________Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BE79411AC4646200E27358 /* _________________Tests.m */; };
 /* End PBXBuildFile section */
 
@@ -118,7 +117,6 @@
 		18BE792D1AC4646100E27358 /* HomePageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomePageViewController.m; sourceTree = "<group>"; };
 		18BE79301AC4646100E27358 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		18BE79321AC4646100E27358 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		18BE79351AC4646200E27358 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		18BE793B1AC4646200E27358 /* سعر الدولار اليومTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "سعر الدولار اليومTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18BE79401AC4646200E27358 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18BE79411AC4646200E27358 /* _________________Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_________________Tests.m"; sourceTree = "<group>"; };
@@ -230,7 +228,6 @@
 				185D7EE61AC7328F00985FDE /* MenuViewController.h */,
 				185D7EE71AC7328F00985FDE /* MenuViewController.m */,
 				18BE79321AC4646100E27358 /* Images.xcassets */,
-				18BE79341AC4646200E27358 /* LaunchScreen.xib */,
 				18BE79251AC4646100E27358 /* Supporting Files */,
 			);
 			path = "سعر الدولار اليوم";
@@ -364,7 +361,6 @@
 				187BABBC1AD0E1E100C97EC6 /* omr.png in Resources */,
 				18BE79311AC4646100E27358 /* Main.storyboard in Resources */,
 				187BABB41AD0E1E100C97EC6 /* dzd.png in Resources */,
-				18BE79361AC4646200E27358 /* LaunchScreen.xib in Resources */,
 				187BABB71AD0E1E100C97EC6 /* jod.png in Resources */,
 				187F1CD71AD246BB00F9863D /* back.jpg in Resources */,
 				187BABB31AD0E1E100C97EC6 /* djf.png in Resources */,
@@ -430,14 +426,6 @@
 				18BE79301AC4646100E27358 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		18BE79341AC4646200E27358 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				18BE79351AC4646200E27358 /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
