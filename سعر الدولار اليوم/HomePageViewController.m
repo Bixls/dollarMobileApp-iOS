@@ -84,9 +84,10 @@
                 self.firstCountry = country;
                 [self.firstCountryImageBtn setBackgroundColor:[UIColor colorWithPatternImage:self.firstCountry.countryFlag]];
                 double temp = [self calculateTheOtherCurrencyFromValueOfFirstCountry:self.firstCountry.currencyValue valueOfSecondCountry:self.secondCountry.currencyValue];
-                NSNumber *currencyValue = @(temp);
+                //NSNumber *currencyValue = @(temp);
                 self.firstCountryCurrency.text = @"1";
-                self.secondCountryCurrency.text= [currencyValue stringValue];
+                self.secondCountryCurrency.text = [NSString stringWithFormat:@"%.4f",temp];
+               // self.secondCountryCurrency.text= [currencyValue stringValue];
                 self.firstLabel.text = self.firstCountry.currencyShortName;
               
                 
@@ -94,8 +95,9 @@
             if ([[userSettings valueForKey:@"secondCountryCode"] isEqualToString:country.countryCode]) {
                 self.secondCountry = country;
                 [self.secondCountryImageBtn setBackgroundColor:[UIColor colorWithPatternImage:self.secondCountry.countryFlag]];
-                NSNumber *currencyValue = @(self.secondCountry.currencyValue);
-                self.secondCountryCurrency.text = [currencyValue stringValue];
+               // NSNumber *currencyValue = @(self.secondCountry.currencyValue);
+               // self.secondCountryCurrency.text = [currencyValue stringValue];
+                self.secondCountryCurrency.text = [NSString stringWithFormat:@"%.4f",self.secondCountry.currencyValue];
                 self.secondLabel.text = self.secondCountry.currencyShortName;
             }
             if ([[userSettings valueForKey:@"firstCountryCode"] isEqualToString:country.countryCode]&&[[userSettings valueForKey:@"secondCountryCode"] isEqualToString:country.countryCode]) {
@@ -106,9 +108,10 @@
                 [self.secondCountryImageBtn setBackgroundColor:[UIColor colorWithPatternImage:self.secondCountry.countryFlag]];
                 
                 double temp = [self calculateTheOtherCurrencyFromValueOfFirstCountry:self.firstCountry.currencyValue valueOfSecondCountry:self.secondCountry.currencyValue];
-                NSNumber *currencyValue = @(temp);
+               // NSNumber *currencyValue = @(temp);
                 self.firstCountryCurrency.text = @"1";
-                self.secondCountryCurrency.text= [currencyValue stringValue];
+                self.secondCountryCurrency.text = [NSString stringWithFormat:@"%.4f",temp];
+               // self.secondCountryCurrency.text= [currencyValue stringValue];
                 self.firstLabel.text = self.firstCountry.currencyShortName;
                 self.secondLabel.text = self.secondCountry.currencyShortName;
             }
@@ -138,9 +141,10 @@
         self.firstCountry = country;
         [self.firstCountryImageBtn setBackgroundColor:[UIColor colorWithPatternImage:country.countryFlag]];
         double temp = [self calculateTheOtherCurrencyFromValueOfFirstCountry:self.firstCountry.currencyValue valueOfSecondCountry:self.secondCountry.currencyValue];
-        NSNumber *currencyValue = @(temp);
+        //NSNumber *currencyValue = @(temp);
         self.firstCountryCurrency.text = @"1";
-        self.secondCountryCurrency.text= [currencyValue stringValue];
+        self.secondCountryCurrency.text = [NSString stringWithFormat:@"%.4f",temp];
+//        self.secondCountryCurrency.text= [currencyValue stringValue];
         self.firstLabel.text = self.firstCountry.currencyShortName;
       
         
@@ -149,8 +153,9 @@
         [self.secondCountryImageBtn setBackgroundColor:[UIColor colorWithPatternImage:country.countryFlag]];
         
         double temp = [self calculateTheOtherCurrencyFromValueOfFirstCountry:self.firstCountry.currencyValue valueOfSecondCountry:self.secondCountry.currencyValue];
-        NSNumber *currencyValue = @(temp);
-        self.secondCountryCurrency.text= [currencyValue stringValue];
+       // NSNumber *currencyValue = @(temp);
+        self.secondCountryCurrency.text = [NSString stringWithFormat:@"%.4f",temp];
+       // self.secondCountryCurrency.text= [currencyValue stringValue];
         self.secondLabel.text = self.secondCountry.currencyShortName;
 
     }
