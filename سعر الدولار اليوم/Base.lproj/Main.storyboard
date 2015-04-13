@@ -276,44 +276,45 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="اهلاً بك" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FVA-Ie-QqL">
-                                <rect key="frame" x="254" y="28" width="63" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dd6-OZ-flK">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dd6-OZ-flK">
                                 <rect key="frame" x="16" y="82" width="288" height="259"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="من" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s9V-31-MuW">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="من" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s9V-31-MuW">
                                         <rect key="frame" x="265" y="50" width="15" height="18"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="15" id="745-78-LXI"/>
+                                            <constraint firstAttribute="height" constant="18" id="eYf-A8-IXe"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="إلي" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jjJ-KD-ew7">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="إلي" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jjJ-KD-ew7">
                                         <rect key="frame" x="261" y="121" width="19" height="18"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="19" id="WPo-09-xLe"/>
+                                            <constraint firstAttribute="height" constant="18" id="z0z-78-15D"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D47-vn-7C6">
-                                        <rect key="frame" x="234" y="147" width="48" height="48"/>
-                                        <state key="normal">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="secondCountryImageBtnPressed:" destination="fIP-eq-B6J" eventType="touchUpInside" id="IkV-lj-rf7"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mbs-V8-fib">
-                                        <rect key="frame" x="235" y="76" width="48" height="48"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mbs-V8-fib">
+                                        <rect key="frame" x="232" y="76" width="48" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="48" id="1aP-wA-OpS"/>
+                                            <constraint firstAttribute="height" constant="48" id="aB7-Vx-luS"/>
+                                        </constraints>
                                         <connections>
                                             <action selector="firstCountryImageBtnPressed:" destination="fIP-eq-B6J" eventType="touchUpInside" id="D4X-GA-0QK"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5jG-cj-ese">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5jG-cj-ese">
                                         <rect key="frame" x="100" y="154" width="127" height="33"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="127" id="7FF-oG-SFO"/>
+                                            <constraint firstAttribute="height" constant="33" id="tMX-Pn-Khg"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <state key="normal" title="Button">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -322,18 +323,12 @@
                                             <action selector="secondCountryLabelBtnPressed:" destination="fIP-eq-B6J" eventType="touchUpInside" id="ymT-sb-KLq"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NdP-wI-EaM">
-                                        <rect key="frame" x="10" y="203" width="272" height="36"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <state key="normal" title="حفظ">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="saveBtnPressed:" destination="fIP-eq-B6J" eventType="touchUpInside" id="3Bz-qs-PQm"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tif-NL-OZg">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tif-NL-OZg">
                                         <rect key="frame" x="100" y="85" width="127" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="fAu-an-5aO"/>
+                                            <constraint firstAttribute="width" constant="127" id="fxq-ne-V0T"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <state key="normal" title="Button">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -342,17 +337,93 @@
                                             <action selector="firstCountryLabelBtnPressed:" destination="fIP-eq-B6J" eventType="touchUpInside" id="A6p-xb-ui6"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="الإعدادات الرئيسية" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zUF-4e-Itr">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الإعدادات الرئيسية" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zUF-4e-Itr">
                                         <rect key="frame" x="152" y="18" width="128" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" id="NMh-OD-Tlh"/>
+                                            <constraint firstAttribute="width" constant="128" id="yqs-fi-wve"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D47-vn-7C6">
+                                        <rect key="frame" x="232" y="147" width="48" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="InA-lE-jQW"/>
+                                            <constraint firstAttribute="width" constant="48" id="k6I-MB-nBK"/>
+                                        </constraints>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="secondCountryImageBtnPressed:" destination="fIP-eq-B6J" eventType="touchUpInside" id="IkV-lj-rf7"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="0.5" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Mbs-V8-fib" secondAttribute="trailing" constant="8" id="4dy-YP-biY"/>
+                                    <constraint firstItem="Mbs-V8-fib" firstAttribute="leading" secondItem="Tif-NL-OZg" secondAttribute="trailing" constant="5" id="63k-3h-31g"/>
+                                    <constraint firstAttribute="trailing" secondItem="s9V-31-MuW" secondAttribute="trailing" constant="8" id="EfQ-K3-80F"/>
+                                    <constraint firstItem="5jG-cj-ese" firstAttribute="top" secondItem="Tif-NL-OZg" secondAttribute="bottom" constant="39" id="HNK-bM-BLw"/>
+                                    <constraint firstAttribute="trailing" secondItem="D47-vn-7C6" secondAttribute="trailing" constant="8" id="LaB-Bb-Hhn"/>
+                                    <constraint firstAttribute="width" constant="288" id="QIk-uf-FwX"/>
+                                    <constraint firstItem="D47-vn-7C6" firstAttribute="leading" secondItem="5jG-cj-ese" secondAttribute="trailing" constant="5" id="SyK-D6-AGk"/>
+                                    <constraint firstAttribute="trailing" secondItem="jjJ-KD-ew7" secondAttribute="trailing" constant="8" id="b6f-Jx-W5f"/>
+                                    <constraint firstItem="D47-vn-7C6" firstAttribute="top" secondItem="jjJ-KD-ew7" secondAttribute="bottom" constant="8" id="cVU-rB-88U"/>
+                                    <constraint firstItem="Mbs-V8-fib" firstAttribute="top" secondItem="s9V-31-MuW" secondAttribute="bottom" constant="8" id="chE-mJ-1fM"/>
+                                    <constraint firstItem="Tif-NL-OZg" firstAttribute="top" secondItem="zUF-4e-Itr" secondAttribute="bottom" constant="43" id="dUf-ZZ-msd"/>
+                                    <constraint firstItem="jjJ-KD-ew7" firstAttribute="top" secondItem="s9V-31-MuW" secondAttribute="bottom" constant="53" id="fn1-RS-UCD"/>
+                                    <constraint firstAttribute="height" constant="259" id="g6G-Fb-GgX"/>
+                                    <constraint firstItem="zUF-4e-Itr" firstAttribute="top" secondItem="dd6-OZ-flK" secondAttribute="top" constant="18" id="m4y-8i-8p7"/>
+                                    <constraint firstItem="s9V-31-MuW" firstAttribute="top" secondItem="zUF-4e-Itr" secondAttribute="bottom" constant="8" id="sdZ-xK-kXM"/>
+                                    <constraint firstAttribute="trailing" secondItem="zUF-4e-Itr" secondAttribute="trailing" constant="8" id="yBi-Bb-8wm"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NdP-wI-EaM">
+                                <rect key="frame" x="24" y="285" width="272" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="272" id="VAf-2O-DdS"/>
+                                    <constraint firstAttribute="height" constant="36" id="aOG-8T-NnA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="حفظ">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveBtnPressed:" destination="fIP-eq-B6J" eventType="touchUpInside" id="3Bz-qs-PQm"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="اهلاً بك" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FVA-Ie-QqL">
+                                <rect key="frame" x="241" y="44" width="63" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="63" id="Mcz-bB-ah6"/>
+                                    <constraint firstAttribute="height" constant="30" id="TDs-Cy-j5m"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FVA-Ie-QqL" firstAttribute="trailing" secondItem="gvL-RW-skC" secondAttribute="trailingMargin" id="8Il-1y-wRi"/>
+                            <constraint firstItem="FVA-Ie-QqL" firstAttribute="top" secondItem="aFp-Ue-odn" secondAttribute="bottom" constant="24" id="8Le-kF-QUt"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="NdP-wI-EaM" secondAttribute="trailing" constant="8" id="An8-hs-weh"/>
+                            <constraint firstItem="NdP-wI-EaM" firstAttribute="leading" secondItem="gvL-RW-skC" secondAttribute="leadingMargin" constant="8" id="C5c-vh-xMg"/>
+                            <constraint firstItem="dd6-OZ-flK" firstAttribute="top" secondItem="FVA-Ie-QqL" secondAttribute="bottom" constant="8" id="Rwv-bA-iDN"/>
+                            <constraint firstAttribute="centerX" secondItem="dd6-OZ-flK" secondAttribute="centerX" id="UBx-hQ-8Dh"/>
+                            <constraint firstItem="NdP-wI-EaM" firstAttribute="top" secondItem="FVA-Ie-QqL" secondAttribute="bottom" constant="211" id="cb0-Xv-7fu"/>
+                            <constraint firstItem="dd6-OZ-flK" firstAttribute="trailing" secondItem="gvL-RW-skC" secondAttribute="trailingMargin" id="saW-qh-cCu"/>
+                            <constraint firstItem="dd6-OZ-flK" firstAttribute="leading" secondItem="gvL-RW-skC" secondAttribute="leadingMargin" id="vRc-pO-vzc"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="firstCountryImageBtn" destination="Mbs-V8-fib" id="2a9-iC-fjP"/>
@@ -972,6 +1043,6 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="TgU-vc-AJC"/>
-        <segue reference="RaN-Qy-gAX"/>
+        <segue reference="zrt-20-76X"/>
     </inferredMetricsTieBreakers>
 </document>
