@@ -76,7 +76,7 @@
 -(void)updateUIWithPersistedData {
    
     if ([[self.userDefaults valueForKey:@"btnPressed"]integerValue]==-1) {
-        
+        self.dateLabel.text = [self.userDefaults objectForKey:@"date"];
         NSDictionary *userSettings = [self.userDefaults objectForKey:@"userSettings"];
         
         for (Country *country in self.countryList.countries) {
@@ -193,7 +193,7 @@
                 NSDateFormatter *dateformat = [[NSDateFormatter alloc]init];
                 [dateformat setDateFormat:@"dd/MM/yyyy hh:mm a"];
                 self.dateLabel.text = [dateformat stringFromDate:date];
-
+                [self.userDefaults setObject:[dateformat stringFromDate:date] forKey:@"date"];
             });
 
         }

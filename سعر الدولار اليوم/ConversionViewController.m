@@ -31,6 +31,8 @@
     self.barButton.action = @selector(revealToggle:);
     [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
     
+    
+    
     self.countryList = [[CountryList alloc]init];
     self.userDefaults = [NSUserDefaults standardUserDefaults];
     [self.userDefaults setObject:[NSNumber numberWithInteger:-1] forKey:@"btnPressed"];
@@ -47,6 +49,7 @@
 
 
 }
+
 
 -(void)viewDidAppear:(BOOL)animated {
     double input = [self.firstTextField.text doubleValue];
@@ -193,6 +196,7 @@
         [self.secondTextField resignFirstResponder];
     }
 }
+
 
 #pragma mark - Segue
 
