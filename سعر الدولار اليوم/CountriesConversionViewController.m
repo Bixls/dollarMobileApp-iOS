@@ -9,6 +9,9 @@
 #import "CountriesConversionViewController.h"
 #import "CountryList.h"
 #import "Country.h"
+
+
+
 @interface CountriesConversionViewController ()
 
 @property (nonatomic,strong) NSUserDefaults *userDefaults;
@@ -21,15 +24,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    UIBarButtonItem *backbutton =  [[UIBarButtonItem alloc] initWithTitle:@"رجوع" style:UIBarButtonItemStylePlain target:nil action:nil];
-//    
-//    [backbutton setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
-//                                        [UIFont systemFontOfSize:16],NSFontAttributeName,
-//                                        nil] forState:UIControlStateNormal];
-//    self.navigationItem.leftBarButtonItem = backbutton;
-  //  self.navigationItem.hidesBackButton = YES;
-//    self.navigationItem.backBarButtonItem = backbutton;
-  //  self.navigationController.navigationBar.topItem.title = @"رجوع";
+
     self.navigationController.navigationBar.tintColor = [UIColor blackColor];
     [self.view setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"back.jpg"]]];
     self.userDefaults = [NSUserDefaults standardUserDefaults];
@@ -47,6 +42,11 @@
     
     self.firstLabel.text = [NSString stringWithFormat:@"أسعار العملات في %@",self.selectedCountry.countryName];
     self.secondLabel.text = [NSString stringWithFormat:@"أسعار الدولار و العملات العربية اليوم بالمقارنة ب%@",self.selectedCountry.currencyFullName];
+    //AdMob
+    self.bannerView.adUnitID = @"ca-app-pub-3940256099942544/2934735716";
+    self.bannerView.rootViewController = self;
+    [self.bannerView loadRequest:[GADRequest request]];
+    
 }
 
 -(void)updateCurrencyWithPersistedData {

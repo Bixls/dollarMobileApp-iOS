@@ -9,11 +9,16 @@
 #import <UIKit/UIKit.h>
 #import "Country.h"
 
+@import GoogleMobileAds;
+
 @interface CountriesConversionViewController : UIViewController <UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic,strong) Country *selectedCountry;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UILabel *firstLabel;
 @property (weak, nonatomic) IBOutlet UILabel *secondLabel;
+@property (weak, nonatomic) IBOutlet GADBannerView *bannerView;
+
+
 
 @end

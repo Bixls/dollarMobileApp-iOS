@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "chooseCountryViewController.h"
 
+@import GoogleMobileAds;
+
 @interface ConversionViewController : UIViewController <UITextFieldDelegate,chooseCountryViewControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *barButton;
@@ -20,6 +22,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *secondImageBtn;
 @property (weak, nonatomic) IBOutlet UIButton *secondLabelBtn;
 @property (weak, nonatomic) IBOutlet UITextField *secondTextField;
+@property (weak, nonatomic) IBOutlet GADBannerView *bannerView;
 
 
 - (IBAction)firstImageBtnPressed:(id)sender;

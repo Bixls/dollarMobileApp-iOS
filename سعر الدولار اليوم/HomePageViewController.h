@@ -10,6 +10,9 @@
 #import "CountryList.h"
 #import "Country.h"
 #import "chooseCountryViewController.h"
+
+@import GoogleMobileAds;
+
 @interface HomePageViewController : UIViewController <chooseCountryViewControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *barButton;
@@ -22,6 +25,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *secondCountryCurrency;
 @property (weak, nonatomic) IBOutlet UILabel *firstLabel;
 @property (weak, nonatomic) IBOutlet UILabel *secondLabel;
+@property (weak, nonatomic) IBOutlet GADBannerView *bannerView;
 
 
 

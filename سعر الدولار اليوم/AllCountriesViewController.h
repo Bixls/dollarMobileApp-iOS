@@ -8,10 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+@import GoogleMobileAds;
+
 @interface AllCountriesViewController : UIViewController <UITableViewDataSource,UITableViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *barButton;
-
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+
+@property (weak, nonatomic) IBOutlet GADBannerView *bannerView;
+
 
 @end

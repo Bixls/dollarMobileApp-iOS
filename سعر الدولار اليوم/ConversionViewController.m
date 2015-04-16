@@ -46,6 +46,10 @@
     [self updateUIWithPersistedData];
      [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(firstTextFieldDidChange:) name:UITextFieldTextDidChangeNotification object:self.firstTextField];
      [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(secondTextFieldDidChange:) name:UITextFieldTextDidChangeNotification object:self.secondTextField];
+    //AdMob
+    self.bannerView.adUnitID = @"ca-app-pub-3940256099942544/2934735716";
+    self.bannerView.rootViewController = self;
+    [self.bannerView loadRequest:[GADRequest request]];
 
 
 }

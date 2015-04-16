@@ -44,6 +44,10 @@
     self.countryList = [[CountryList alloc]init];
     [self updateCurrencyWithPersistedData];
     [self updateUIWithPersistedData];
+    //AdMob
+    self.bannerView.adUnitID = @"ca-app-pub-3940256099942544/2934735716";
+    self.bannerView.rootViewController = self;
+    [self.bannerView loadRequest:[GADRequest request]];
   
 }
 
