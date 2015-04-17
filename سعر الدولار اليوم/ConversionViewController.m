@@ -10,6 +10,7 @@
 #import "SWRevealViewController.h"
 #import "Country.h"
 #import "CountryList.h"
+#import <GoogleMobileAds/GADInterstitial.h>
 
 @interface ConversionViewController ()
 
@@ -18,7 +19,7 @@
 @property (nonatomic,strong) Country *defaultCountry2;
 @property (nonatomic) double firstCountryCurr;
 @property (nonatomic) double secondCountryCurr;
-
+@property (nonatomic,strong) GADInterstitial *interstitial;
 @property (nonatomic,strong) NSUserDefaults *userDefaults;
 
 @end
@@ -50,12 +51,20 @@
     self.bannerView.adUnitID = @"ca-app-pub-3940256099942544/2934735716";
     self.bannerView.rootViewController = self;
     [self.bannerView loadRequest:[GADRequest request]];
-
+    //AdMob-interstitial
+    self.interstitial = [[GADInterstitial alloc] init];
+    self.interstitial.adUnitID = @"ca-app-pub-3940256099942544/4411468910";
+    
+    GADRequest *request = [GADRequest request];
+    // Requests test ads on test devices.
+    request.testDevices = @[@"2077ef9a63d2b398840261c8221a0c9b"];
+    [self.interstitial loadRequest:request];
 
 }
 
 
 -(void)viewDidAppear:(BOOL)animated {
+    [self launchinterstitial];
     double input = [self.firstTextField.text doubleValue];
     if (input) {
         double tempValue = input/self.defaultCountry1.currencyValue;
@@ -211,5 +220,13 @@
     }
     
 }
+
+#pragma mark - AdMob Methods
+-(void)launchinterstitial {
+    if ([self.interstitial isReady]) {
+        [self.interstitial presentFromRootViewController:self];
+    }
+}
+
 
 @end

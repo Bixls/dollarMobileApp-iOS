@@ -182,7 +182,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		18478AF11ADFEB07009ABC08 /* AdMob frameworks */ = {
+		18478AF11ADFEB07009ABC08 /* AdMob */ = {
 			isa = PBXGroup;
 			children = (
 				18478AEF1ADFEAE8009ABC08 /* SystemConfiguration.framework */,
@@ -198,7 +198,7 @@
 				18478ADB1ADFEA90009ABC08 /* AdSupport.framework */,
 				18478AD91ADFEA70009ABC08 /* GoogleMobileAds.framework */,
 			);
-			name = "AdMob frameworks";
+			name = AdMob;
 			sourceTree = "<group>";
 		};
 		185D7EE01AC72B5C00985FDE /* SWRevealViewController */ = {
@@ -243,7 +243,7 @@
 			children = (
 				18478AF21ADFF180009ABC08 /* Foundation.framework */,
 				18478AF41ADFF187009ABC08 /* UIKit.framework */,
-				18478AF11ADFEB07009ABC08 /* AdMob frameworks */,
+				18478AF11ADFEB07009ABC08 /* AdMob */,
 				187BABC61AD0E1E900C97EC6 /* Flags */,
 				185D7EE41AC7322200985FDE /* menu.png */,
 				187F1CD61AD246BB00F9863D /* back.jpg */,

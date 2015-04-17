@@ -11,6 +11,7 @@
 #import "CountryList.h"
 #import "Country.h"
 #import "CountriesConversionViewController.h"
+#import <GoogleMobileAds/GADInterstitial.h>
 
 @interface AllCountriesViewController ()
 
@@ -18,6 +19,7 @@
 @property (nonatomic,strong) NSArray *countries;
 @property (nonatomic) NSInteger selectedCountryIndex;
 @property (nonatomic,strong) Country *selectedCountry;
+@property (nonatomic,strong) GADInterstitial *interstitial;
 @end
 
 @implementation AllCountriesViewController
@@ -42,9 +44,27 @@
     self.bannerView.adUnitID = @"ca-app-pub-3940256099942544/2934735716";
     self.bannerView.rootViewController = self;
     [self.bannerView loadRequest:[GADRequest request]];
+    //AdMob-interstitial
+    self.interstitial = [[GADInterstitial alloc] init];
+    self.interstitial.adUnitID = @"ca-app-pub-3940256099942544/4411468910";
     
-}
+    GADRequest *request = [GADRequest request];
+    // Requests test ads on test devices.
+    request.testDevices = @[@"2077ef9a63d2b398840261c8221a0c9b"];
+    [self.interstitial loadRequest:request];
 
+}
+-(void)viewDidAppear:(BOOL)animated {
+    //AdMob-interstitial
+    self.interstitial = [[GADInterstitial alloc] init];
+    self.interstitial.adUnitID = @"ca-app-pub-3940256099942544/4411468910";
+    
+    GADRequest *request = [GADRequest request];
+    // Requests test ads on test devices.
+    request.testDevices = @[@"2077ef9a63d2b398840261c8221a0c9b"];
+    [self.interstitial loadRequest:request];
+
+}
 
 #pragma mark - Table View Data Source Methods
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
@@ -78,6 +98,8 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
+    [self launchinterstitial];
+    
 }
 
 #pragma mark - Segue
@@ -85,6 +107,12 @@
     if ([segue.identifier isEqualToString:@"countriesConversion"]) {
         CountriesConversionViewController *countriesConversionView = segue.destinationViewController;
         countriesConversionView.selectedCountry = self.selectedCountry;
+    }
+}
+#pragma mark - AdMob Methods
+-(void)launchinterstitial {
+    if ([self.interstitial isReady]) {
+        [self.interstitial presentFromRootViewController:self];
     }
 }
 

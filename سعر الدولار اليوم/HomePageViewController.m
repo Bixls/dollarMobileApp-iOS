@@ -8,6 +8,7 @@
 
 #import "HomePageViewController.h"
 #import "SWRevealViewController.h"
+#import <GoogleMobileAds/GADInterstitial.h>
 
 @interface HomePageViewController ()
 
@@ -17,6 +18,7 @@
 @property (nonatomic,strong) Country *firstCountry;
 @property (nonatomic,strong) Country *secondCountry;
 @property (nonatomic,strong) NSUserDefaults *userDefaults;
+@property (nonatomic,strong) GADInterstitial *interstitial;
 
 @end
 
@@ -29,6 +31,7 @@
     if (![self.userDefaults boolForKey:@"HasLaunchedOnce"]) {
         [self performSegueWithIdentifier:@"firstTimeSegue" sender:self];
     }
+    
     
     [self.userDefaults setObject:[NSNumber numberWithInteger:-1] forKey:@"btnPressed"];
     
@@ -48,11 +51,20 @@
     self.bannerView.adUnitID = @"ca-app-pub-3940256099942544/2934735716";
     self.bannerView.rootViewController = self;
     [self.bannerView loadRequest:[GADRequest request]];
-  
+    //AdMob-interstitial
+    self.interstitial = [[GADInterstitial alloc] init];
+    self.interstitial.adUnitID = @"ca-app-pub-3940256099942544/4411468910";
+    
+    GADRequest *request = [GADRequest request];
+    // Requests test ads on test devices.
+    request.testDevices = @[@"2077ef9a63d2b398840261c8221a0c9b"];
+    [self.interstitial loadRequest:request];
 }
 
 -(void)viewDidAppear:(BOOL)animated {
+    
     [self updateUIWithPersistedData];
+    [self launchinterstitial];
 }
 
 #pragma mark - Data Manipulation methods
@@ -204,7 +216,7 @@
     }];
     [task resume];
     
-    
+    [self launchinterstitial];
 
 
 }
@@ -231,7 +243,12 @@
     
 }
 
-
+#pragma mark - AdMob Methods
+-(void)launchinterstitial {
+    if ([self.interstitial isReady]) {
+        [self.interstitial presentFromRootViewController:self];
+    }
+}
 
 
 @end
