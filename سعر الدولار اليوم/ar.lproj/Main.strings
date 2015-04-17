@@ -1,0 +1,96 @@
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "5jG-cj-ese"; */
+"5jG-cj-ese.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "           أسعار الدولار"; ObjectID = "7qu-hW-9vQ"; */
+"7qu-hW-9vQ.text" = "           أسعار الدولار";
+
+/* Class = "UILabel"; text = "اهلاً بك"; ObjectID = "FVA-Ie-QqL"; */
+"FVA-Ie-QqL.text" = "اهلاً بك";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "G1a-RR-Jfz"; */
+"G1a-RR-Jfz.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "             إعدادات"; ObjectID = "GBU-I3-BHp"; */
+"GBU-I3-BHp.text" = "             إعدادات";
+
+/* Class = "UILabel"; text = "أسعار الدولار في البلاد العربية"; ObjectID = "GUW-wc-hil"; */
+"GUW-wc-hil.text" = "أسعار الدولار في البلاد العربية";
+
+/* Class = "UILabel"; text = "             حساب قيم التحويل"; ObjectID = "HF1-4h-N8G"; */
+"HF1-4h-N8G.text" = "             حساب قيم التحويل";
+
+/* Class = "UIButton"; normalTitle = "تحديث"; ObjectID = "I2e-0X-kdU"; */
+"I2e-0X-kdU.normalTitle" = "تحديث";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Kec-rE-xuq"; */
+"Kec-rE-xuq.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "LnP-Pr-IeG"; */
+"LnP-Pr-IeG.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "حفظ"; ObjectID = "NdP-wI-EaM"; */
+"NdP-wI-EaM.normalTitle" = "حفظ";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Tif-NL-OZg"; */
+"Tif-NL-OZg.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "VMV-A9-TlS"; */
+"VMV-A9-TlS.text" = "Title";
+
+/* Class = "UILabel"; text = "             الرئيسية"; ObjectID = "VhZ-1n-s1z"; */
+"VhZ-1n-s1z.text" = "             الرئيسية";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "bIV-fb-weL"; */
+"bIV-fb-weL.text" = "Label";
+
+/* Class = "UILabel"; text = "من"; ObjectID = "cwB-dq-Xcc"; */
+"cwB-dq-Xcc.text" = "من";
+
+/* Class = "UILabel"; text = "الإعدادات الرئيسية"; ObjectID = "gSE-SS-Xqa"; */
+"gSE-SS-Xqa.text" = "الإعدادات الرئيسية";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "iOC-GN-eik"; */
+"iOC-GN-eik.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "j6L-kd-QsH"; */
+"j6L-kd-QsH.text" = "Title";
+
+/* Class = "UILabel"; text = "إلي"; ObjectID = "jjJ-KD-ew7"; */
+"jjJ-KD-ew7.text" = "إلي";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "lvU-N7-PYe"; */
+"lvU-N7-PYe.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "psA-6c-hiU"; */
+"psA-6c-hiU.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "آخر تحديث"; ObjectID = "puU-d7-Amc"; */
+"puU-d7-Amc.text" = "آخر تحديث";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "r7i-4R-yms"; */
+"r7i-4R-yms.text" = "Title";
+
+/* Class = "UILabel"; text = "Detail"; ObjectID = "rlT-aA-FWO"; */
+"rlT-aA-FWO.text" = "Detail";
+
+/* Class = "UILabel"; text = "من"; ObjectID = "s9V-31-MuW"; */
+"s9V-31-MuW.text" = "من";
+
+/* Class = "UILabel"; text = "label"; ObjectID = "ulH-Qi-I2d"; */
+"ulH-Qi-I2d.text" = "label";
+
+/* Class = "UIButton"; normalTitle = "حفظ"; ObjectID = "xDJ-3u-qxK"; */
+"xDJ-3u-qxK.normalTitle" = "حفظ";
+
+/* Class = "UILabel"; text = "إلي"; ObjectID = "xj5-KU-bZs"; */
+"xj5-KU-bZs.text" = "إلي";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "y7p-cZ-iEl"; */
+"y7p-cZ-iEl.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "label"; ObjectID = "ydQ-ye-c9u"; */
+"ydQ-ye-c9u.text" = "label";
+
+/* Class = "UILabel"; text = "الإعدادات الرئيسية"; ObjectID = "zUF-4e-Itr"; */
+"zUF-4e-Itr.text" = "الإعدادات الرئيسية";
