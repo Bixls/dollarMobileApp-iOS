@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		180785CC1ADFFBBA00A73276 /* dollarPrices@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 180785CA1ADFFBBA00A73276 /* dollarPrices@3x.png */; };
+		180785CD1ADFFBBA00A73276 /* dollarPrices@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 180785CB1ADFFBBA00A73276 /* dollarPrices@2x.png */; };
+		180785D01ADFFED500A73276 /* dollarPrices-Spotlight@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 180785CE1ADFFED500A73276 /* dollarPrices-Spotlight@3x.png */; };
+		180785D11ADFFED500A73276 /* dollarPrices-Spotlight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 180785CF1ADFFED500A73276 /* dollarPrices-Spotlight@2x.png */; };
+		180785D51ADFFF5D00A73276 /* dollarPrices-Settings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 180785D31ADFFF5D00A73276 /* dollarPrices-Settings@2x.png */; };
+		180785D61ADFFF5D00A73276 /* dollarPrices-Settings@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 180785D41ADFFF5D00A73276 /* dollarPrices-Settings@3x.png */; };
 		1842DC8D1AD41AEB0089FB74 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1842DC8C1AD41AEB0089FB74 /* SettingsViewController.m */; };
 		18478ADA1ADFEA70009ABC08 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18478AD91ADFEA70009ABC08 /* GoogleMobileAds.framework */; };
 		18478ADC1ADFEA90009ABC08 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18478ADB1ADFEA90009ABC08 /* AdSupport.framework */; };
@@ -76,6 +82,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		180785CA1ADFFBBA00A73276 /* dollarPrices@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dollarPrices@3x.png"; sourceTree = "<group>"; };
+		180785CB1ADFFBBA00A73276 /* dollarPrices@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dollarPrices@2x.png"; sourceTree = "<group>"; };
+		180785CE1ADFFED500A73276 /* dollarPrices-Spotlight@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dollarPrices-Spotlight@3x.png"; sourceTree = "<group>"; };
+		180785CF1ADFFED500A73276 /* dollarPrices-Spotlight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dollarPrices-Spotlight@2x.png"; sourceTree = "<group>"; };
+		180785D31ADFFF5D00A73276 /* dollarPrices-Settings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dollarPrices-Settings@2x.png"; sourceTree = "<group>"; };
+		180785D41ADFFF5D00A73276 /* dollarPrices-Settings@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dollarPrices-Settings@3x.png"; sourceTree = "<group>"; };
 		1842DC8B1AD41AEB0089FB74 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
 		1842DC8C1AD41AEB0089FB74 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		18478AD91ADFEA70009ABC08 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
@@ -411,7 +423,10 @@
 				187BABB61AD0E1E100C97EC6 /* iqd.png in Resources */,
 				187BABC21AD0E1E100C97EC6 /* syp.png in Resources */,
 				187BABB21AD0E1E100C97EC6 /* bhd.png in Resources */,
+				180785CC1ADFFBBA00A73276 /* dollarPrices@3x.png in Resources */,
 				187BABC41AD0E1E100C97EC6 /* usd.png in Resources */,
+				180785D51ADFFF5D00A73276 /* dollarPrices-Settings@2x.png in Resources */,
+				180785D11ADFFED500A73276 /* dollarPrices-Spotlight@2x.png in Resources */,
 				185D7EE51AC7322200985FDE /* menu.png in Resources */,
 				187BABB11AD0E1E100C97EC6 /* aed.png in Resources */,
 				187BABC31AD0E1E100C97EC6 /* tnd.png in Resources */,
@@ -419,6 +434,7 @@
 				187BABBA1AD0E1E100C97EC6 /* lyd.png in Resources */,
 				187BABBB1AD0E1E100C97EC6 /* mad.png in Resources */,
 				187BABCA1AD0F51000C97EC6 /* values.plist in Resources */,
+				180785D61ADFFF5D00A73276 /* dollarPrices-Settings@3x.png in Resources */,
 				187BABB51AD0E1E100C97EC6 /* egp.png in Resources */,
 				184D2B6C1AD4054E00AC9F3A /* equal.png in Resources */,
 				187BABC11AD0E1E100C97EC6 /* sync.png in Resources */,
@@ -427,9 +443,11 @@
 				187BABB41AD0E1E100C97EC6 /* dzd.png in Resources */,
 				187BABB71AD0E1E100C97EC6 /* jod.png in Resources */,
 				187F1CD71AD246BB00F9863D /* back.jpg in Resources */,
+				180785CD1ADFFBBA00A73276 /* dollarPrices@2x.png in Resources */,
 				187BABB31AD0E1E100C97EC6 /* djf.png in Resources */,
 				18BE79331AC4646100E27358 /* Images.xcassets in Resources */,
 				187BABB91AD0E1E100C97EC6 /* lbp.png in Resources */,
+				180785D01ADFFED500A73276 /* dollarPrices-Spotlight@3x.png in Resources */,
 				187BABC01AD0E1E100C97EC6 /* sos.png in Resources */,
 				18A648311AD7EC3200860908 /* equal4.png in Resources */,
 			);
