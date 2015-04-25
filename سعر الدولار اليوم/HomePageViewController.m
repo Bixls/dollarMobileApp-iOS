@@ -196,7 +196,7 @@
     NSURLSessionDownloadTask *task = [session downloadTaskWithRequest:request completionHandler:^(NSURL *location, NSURLResponse *response, NSError *error) {
         NSData *receivedData = [NSData dataWithContentsOfURL:location];
         if (error) {
-            UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"عذراً" message:@"من فضلك تأكد من وجود انترنت للتحديث" delegate:nil cancelButtonTitle:@"تم" otherButtonTitles:nil, nil];
+            UIAlertView *alert = [[UIAlertView alloc]initWithTitle:NSLocalizedString(@"alertTitle", "") message:NSLocalizedString(@"alertMessage", "") delegate:nil cancelButtonTitle:NSLocalizedString(@"alertCancel", "") otherButtonTitles:nil, nil];
             [alert show];
         }else{
              self.receivedDictionary = [NSJSONSerialization JSONObjectWithData:receivedData options:kNilOptions error:nil];

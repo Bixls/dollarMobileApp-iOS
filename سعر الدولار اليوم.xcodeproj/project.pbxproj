@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1800DAC91AE198EE00DDF18D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1800DACB1AE198EE00DDF18D /* Localizable.strings */; };
 		180785CC1ADFFBBA00A73276 /* dollarPrices@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 180785CA1ADFFBBA00A73276 /* dollarPrices@3x.png */; };
 		180785CD1ADFFBBA00A73276 /* dollarPrices@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 180785CB1ADFFBBA00A73276 /* dollarPrices@2x.png */; };
 		180785D01ADFFED500A73276 /* dollarPrices-Spotlight@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 180785CE1ADFFED500A73276 /* dollarPrices-Spotlight@3x.png */; };
@@ -82,8 +83,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1800DAC41AE17BE800DDF18D /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
-		1800DAC61AE17D2200DDF18D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1800DACA1AE198EE00DDF18D /* en */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		1800DACC1AE1990A00DDF18D /* ar */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
 		180785CA1ADFFBBA00A73276 /* dollarPrices@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dollarPrices@3x.png"; sourceTree = "<group>"; };
 		180785CB1ADFFBBA00A73276 /* dollarPrices@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dollarPrices@2x.png"; sourceTree = "<group>"; };
 		180785CE1ADFFED500A73276 /* dollarPrices-Spotlight@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dollarPrices-Spotlight@3x.png"; sourceTree = "<group>"; };
@@ -162,6 +163,8 @@
 		18BE793B1AC4646200E27358 /* سعر الدولار اليومTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "سعر الدولار اليومTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18BE79401AC4646200E27358 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18BE79411AC4646200E27358 /* _________________Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_________________Tests.m"; sourceTree = "<group>"; };
+		18FE24D11AE1CF7900950F35 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main.storyboard; sourceTree = "<group>"; };
+		18FE24D21AE1D03E00950F35 /* ar */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = ar; path = ar.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -317,6 +320,7 @@
 				185D7EE01AC72B5C00985FDE /* SWRevealViewController */,
 				18BE79261AC4646100E27358 /* Info.plist */,
 				18BE79271AC4646100E27358 /* main.m */,
+				1800DACB1AE198EE00DDF18D /* Localizable.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -401,6 +405,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ar,
 			);
 			mainGroup = 18BE79191AC4646100E27358;
 			productRefGroup = 18BE79231AC4646100E27358 /* Products */;
@@ -428,6 +433,7 @@
 				180785CC1ADFFBBA00A73276 /* dollarPrices@3x.png in Resources */,
 				187BABC41AD0E1E100C97EC6 /* usd.png in Resources */,
 				180785D51ADFFF5D00A73276 /* dollarPrices-Settings@2x.png in Resources */,
+				1800DAC91AE198EE00DDF18D /* Localizable.strings in Resources */,
 				180785D11ADFFED500A73276 /* dollarPrices-Spotlight@2x.png in Resources */,
 				185D7EE51AC7322200985FDE /* menu.png in Resources */,
 				187BABB11AD0E1E100C97EC6 /* aed.png in Resources */,
@@ -504,12 +510,22 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		1800DACB1AE198EE00DDF18D /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1800DACA1AE198EE00DDF18D /* en */,
+				1800DACC1AE1990A00DDF18D /* ar */,
+			);
+			name = Localizable.strings;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		18BE792F1AC4646100E27358 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				18BE79301AC4646100E27358 /* Base */,
-				1800DAC41AE17BE800DDF18D /* ar */,
-				1800DAC61AE17D2200DDF18D /* en */,
+				18FE24D11AE1CF7900950F35 /* en */,
+				18FE24D21AE1D03E00950F35 /* ar */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

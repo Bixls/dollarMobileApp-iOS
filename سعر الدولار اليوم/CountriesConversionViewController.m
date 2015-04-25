@@ -39,9 +39,12 @@
             self.selectedCountry = country;
         }
     }
-    
-    self.firstLabel.text = [NSString stringWithFormat:@"أسعار العملات في %@",self.selectedCountry.countryName];
-    self.secondLabel.text = [NSString stringWithFormat:@"أسعار الدولار و العملات العربية اليوم بالمقارنة ب%@",self.selectedCountry.currencyFullName];
+    //أسعار العملات في
+    NSString *temp = NSLocalizedString(@"shortLabel", "");
+    self.firstLabel.text = [NSString stringWithFormat:@"%@ %@",temp,self.selectedCountry.countryName];
+    NSString *temp2= NSLocalizedString(@"largeLabel", @"") ;
+    //أسعار الدولار و العملات العربية اليوم بالمقارنة ب
+    self.secondLabel.text = [NSString stringWithFormat:@"%@ %@",temp2,self.selectedCountry.currencyFullName];
     //AdMob
     self.bannerView.adUnitID = @"ca-app-pub-3940256099942544/2934735716";
     self.bannerView.rootViewController = self;
