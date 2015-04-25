@@ -85,6 +85,7 @@
     }
     
     Country *country = self.countries[indexPath.row];
+    cell.imageView.image = country.countryFlag;
     cell.textLabel.text = country.countryName;
     
     return cell ;
