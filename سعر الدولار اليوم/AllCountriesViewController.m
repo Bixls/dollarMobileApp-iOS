@@ -26,7 +26,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    UIBarButtonItem *backbutton =  [[UIBarButtonItem alloc] initWithTitle:@"رجوع" style:UIBarButtonItemStylePlain target:nil action:nil];
+    UIBarButtonItem *backbutton =  [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"backButton", "") style:UIBarButtonItemStylePlain target:nil action:nil];
     
     [backbutton setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
                                         [UIFont systemFontOfSize:16],NSFontAttributeName,
