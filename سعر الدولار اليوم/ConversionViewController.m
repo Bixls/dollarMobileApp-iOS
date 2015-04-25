@@ -210,6 +210,20 @@
     }
 }
 
+- (IBAction)revertBtnPressed:(id)sender {
+    Country *temp = self.defaultCountry1;
+    self.defaultCountry1 = self.defaultCountry2;
+    self.defaultCountry2 = temp;
+    
+    
+    [self.firstImageBtn setBackgroundColor:[UIColor colorWithPatternImage:self.defaultCountry1.countryFlag]];
+    [self.secondImageBtn setBackgroundColor:[UIColor colorWithPatternImage:self.defaultCountry2.countryFlag]];
+    [self.firstLabelBtn setTitle:self.defaultCountry1.currencyFullName forState:UIControlStateNormal];
+    [self.secondLabelBtn setTitle:self.defaultCountry2.currencyFullName forState:UIControlStateNormal];
+    self.firstTextField.text = @"";
+    self.secondTextField.text = @"";
+}
+
 
 #pragma mark - Segue
 

@@ -235,6 +235,29 @@
     [self performSegueWithIdentifier:@"chooseCountrySegue" sender:self];
 }
 
+- (IBAction)revertBtnPressed:(id)sender {
+    Country *temp = self.firstCountry;
+    self.firstCountry = self.secondCountry;
+    self.secondCountry = temp;
+    
+    
+    [self.firstCountryImageBtn setBackgroundColor:[UIColor colorWithPatternImage:self.firstCountry.countryFlag]];
+    [self.secondCountryImageBtn setBackgroundColor:[UIColor colorWithPatternImage:self.secondCountry.countryFlag]];
+    double tempValue = [self calculateTheOtherCurrencyFromValueOfFirstCountry:self.firstCountry.currencyValue valueOfSecondCountry:self.secondCountry.currencyValue];
+    
+    self.firstCountryCurrency.text = @"1";
+    self.secondCountryCurrency.text = [NSString stringWithFormat:@"%.4f",tempValue];
+   
+    self.firstLabel.text = self.firstCountry.currencyShortName;
+    self.secondLabel.text = self.secondCountry.currencyShortName;
+    
+}
+
+
+
+
+#pragma mark - SEGUE
+
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqualToString:@"chooseCountrySegue"]) {
         chooseCountryViewController *chooseCountryView = segue.destinationViewController;

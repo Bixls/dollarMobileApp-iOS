@@ -31,6 +31,7 @@
 - (IBAction)secondImageBtnPressed:(id)sender;
 - (IBAction)secondLabelBtnPressed:(id)sender;
 - (IBAction)dismissKeyboardWithBB:(id)sender;
+- (IBAction)revertBtnPressed:(id)sender;
 
 
 
